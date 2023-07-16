@@ -1,0 +1,180 @@
+/*! Header v1.1.1 
+ * Copyright 2020-2021 letsbooktheflights.
+*/
+/*.header{width: 100%;float: left;padding: 2px 0;box-shadow: 0 0 5px #0a0a0a;position: relative;z-index: 9;}*/
+.header {
+    width: 100%;
+    float: left;
+    padding: 2px 0;
+    box-shadow: -4px 4px 15px 2px #0a0a0a;
+    position: relative;
+    z-index: 9;
+    height: 106px
+}
+.mfheader__warp { padding-bottom:0;}
+.logo { width: 199px; float: left;margin-left: 10px;}
+.logo a { display:block;}
+.call-number{ float: right;padding-left: 42px;color: #ab0101;font: 700 25px/25px Arial, Helvetica, sans-serif;position: relative;left: 0px;}
+.call-number a{color:#ab0101;font:700 25px/25px Arial, Helvetica, sans-serif;text-decoration:none}
+.call-number span{display: block;font: 600 12px/20px Arial, Helvetica, sans-serif;color: #354045;margin-top: 2px;letter-spacing: 0px;}
+.call-number span.callNowIcon { font-size: 35px; color: rgb(171, 1, 1); position: absolute; left: 0px; vertical-align: middle; top: 6px; }
+.menu-box{float:right;width:60%;}
+.mfheader-mainav.menu-box.navbar.navbar-default {
+    border: 0 none;
+    margin-right: 160px;
+}
+.mfheader-mainav.menu-box .mfscheck-booking {float: right;margin-right: 18px;margin-top: 2px;}
+.mfheader-mainav.menu-box .mfscheck-booking.hpdivline{ position: relative; }
+.mfheader-mainav.menu-box .mfscheck-booking.hpdivline:after{ content: '|'; position:absolute; top: 0;right: -10px; color:#d6d6d6; }
+.mfheader-mainav.menu-box .mfscheck-booking.blog{position:relative; margin-right:30px;}
+.mfheader-mainav.menu-box .mfscheck-booking.blog:before{content: '|'; position:absolute; top: 0;left: -10px; color:#d6d6d6;}
+.mfheader-mainav.menu-box .mfscheck-booking a {font:400 12px/16px Arial, Helvetica, sans-serif;color:#137fb0; display:inline-block;}
+.mfheader-mainav.menu-box .login-register{ float: right;margin-right: 14px;margin-top: 3px;}
+.mfheader-mainav.menu-box .login-register ul{margin:0px;padding:0px;list-style:none;}
+.mfheader-mainav.menu-box .login-register ul li{    float: left;}
+.mfheader-mainav.menu-box .login-register ul li a{font:400 12px/16px Arial, Helvetica, sans-serif;color:#137fb0; text-decoration:none; background: url(/travelresources/Images/New_Home/images/login-icon.png) no-repeat left center; padding:0 16px; }
+.mfheader-mainav.menu-box .login-register ul li a:hover{text-decoration:underline;}
+.mfheader-mainav.menu-box .login-register ul li:first-child a{background: url(/travelresources/Images/New_Home/images/register-icon.png) no-repeat left center;padding-left: 15px;}
+/*****
+    mfHeader_nav
+    ********/
+.main-menu{width:100%; float:left;}
+.main-menu ul{margin: 7px 0 0 0;padding: 0px;list-style: none;float: right;}
+.main-menu ul li{float: left;}
+.main-menu ul li a{font:600 13px/16px Arial, Helvetica, sans-serif;color:#556268; text-decoration:none;  padding:0 12px; text-transform:uppercase; }
+.main-menu ul li a:hover { text-decoration: none;  color: #171717;  }
+.main-menu ul.mfheader-nav_group {position: relative;}
+.main-menu ul.mfheader-nav_group li { display:inline-block;vertical-align: middle; margin:0 4px; }
+.main-menu ul.mfheader-nav_group li a { text-align: center;height: 30px; border-bottom: 1px solid #fff; display: block; overflow: hidden;-webkit-transition: all .2s;-moz-transition: all .2s;-ms-transition: all .2s;-o-transition: all .2s;transition: all .2s}
+.main-menu ul.mfheader-nav_group li a> span {position: relative;display: inline-block; -webkit-transition: -webkit-transform .3s;-moz-transition: -moz-transform .3s;transition: transform .3s}
+.main-menu ul.mfheader-nav_group li a>span:after { position: absolute;top: 200%;left: 0;content: attr(data-hover);color: #137fb0}
+.main-menu ul.mfheader-nav_group li a:hover, .main-menu ul.mfheader-nav_group li.active__nav a, .main-menu ul.mfheader-nav_group li:hover a {background: 0 0; border-bottom: 2px solid #137fb0;color: #137fb0}
+.main-menu ul.mfheader-nav_group li a:focus span, .main-menu ul.mfheader-nav_group li.active__nav a span, .main-menu ul.mfheader-nav_group li a:hover span { -webkit-transform: translateY(-200%); -moz-transform: translateY(-200%);transform: translateY(-200%)}
+
+.social-icon{float:right;float:right;margin: 4px 13px 0 0;}
+.social-icon ul{margin:0px;padding:0px;list-style:none;}
+.social-icon ul li{width:17px;height:17px;float:left;background:url(/travelresources/Images/New_Home/images/social-sprite.png) no-repeat left top; margin: 0 2px;}
+.social-icon ul li a{display:block;float:left;text-indent:-999px;    width: 100%;}
+.social-icon ul li.facebook{background:url(/travelresources/Images/New_Home/images/social-sprite.png) no-repeat left top;}
+.social-icon ul li.pin{ background-position:-20px 0;}
+.social-icon ul li.gplus{ background-position:-40px 0;}
+.social-icon ul li.twitter{ background-position:-60px 0;}
+
+.social-icon ul li.facebook:hover{background-position:0px -20px;}
+.social-icon ul li.pin:hover{ background-position:-20px -20px;}
+.social-icon ul li.gplus:hover{ background-position:-40px -20px;}
+.social-icon ul li.twitter:hover{ background-position:-60px -20px;}
+
+/*signin*/
+.newLog .navbar-nav>li>.logInBox.dropdown-menu {margin-top:-20px;border-radius:0;margin-left: -10%;width: 120%;padding: 25px 15px;}
+.newLog .navbar-nav>li>.registerBox.dropdown-menu {margin-top:-20px;border-radius:0;margin-left: -18%;width: 145%;padding: 25px 15px;}
+.newLog .mega-dropdown {position: static !important;/* width:100%; */}
+.newLog .mega-dropdown-menu {display:block;padding: 20px 0px;width: 100%;box-shadow: none;-webkit-box-shadow: none;}
+.newLog .logInBox.mega-dropdown-menu:before {content: "";border-bottom: 10px solid #dedede;border-right: 10px solid transparent;border-left: 10px solid transparent;position: absolute;top: -10px;right: 15%;z-index: 10;}
+.newLog .registerBox.mega-dropdown-menu:before {content: "";border-bottom: 10px solid #dedede;border-right: 10px solid transparent;border-left: 10px solid transparent;position: absolute;top: -10px;right: 24%;z-index: 10;}
+/* .newLog .registerBox.mega-dropdown-menu:after {content: "";border-bottom: 10px solid #dedede;border-right: 10px solid transparent;border-left: 10px solid transparent;position: absolute;top: -10px;right: 30%;z-index: 8;}
+.newLog .logInBox.mega-dropdown-menu:before {content: "";border-bottom: 10px solid #dedede;border-right: 10px solid transparent;border-left: 10px solid transparent;position: absolute;top: -10px;right: 24%;z-index: 10;}
+.newLog .logInBox.mega-dropdown-menu:after {content: "";border-bottom: 10px solid #dedede;border-right: 10px solid transparent;border-left: 10px solid transparent;position: absolute;top: -10px;right: 24%;z-index: 8;} */
+.newLog .mega-dropdown-menu > li > ul {padding: 0;margin: 0;}
+.newLog .mega-dropdown-menu > li > ul > li {list-style: none;}
+.newLog .mega-dropdown-menu > li > ul > li > a {display: block;padding: 3px 20px;clear: both;font-weight: normal;line-height: 1.428571429;color: #999;white-space: normal;font-size: 14px;}
+.newLog .mega-dropdown-menu > li ul > li > a:hover,
+.newLog .mega-dropdown-menu > li ul > li > a:focus {text-decoration: none;color: #444;background-color: #f5f5f5; }
+.newLog .mega-dropdown-menu .dropdown-header {color: #428bca;font-size: 18px;font-weight:bold;}
+.newLog .logInBox.mega-dropdown-menu form input {border: 1px solid #5ba6c8;border-radius: 0;width:34%;}
+.newLog .registerBox.mega-dropdown-menu form input {border: 1px solid #5ba6c8;border-radius: 0;width:24%;}
+.newLog .mega-dropdown-menu form .btn-default {
+background: rgb(111,151,15); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(111,151,15,1) 1%, rgba(95,132,8,1) 51%, rgba(84,120,4,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(111,151,15,1) 1%,rgba(95,132,8,1) 51%,rgba(84,120,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(111,151,15,1) 1%,rgba(95,132,8,1) 51%,rgba(84,120,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f970f', endColorstr='#547804',GradientType=0 ); /* IE6-9 */
+border-color:#5e8208;color:#fff;border-radius:0;width:24%; margin-bottom: -1px;}
+.newLog .mega-dropdown-menu .form-group {display:inline;}
+.logTxt {font-size: 14px;color: #222222;font-weight: 600;}
+.logTxt2 {font-size: 13px;color: #8f8f8f;font-weight: 600;margin-top:10px;margin-bottom:0;}
+.logSocialBox {margin-top:30px;}
+.logSocialBox::after { content: " |";color: #ccc;font-weight: bold;position: absolute;right: 3%;top: 37%;}
+.logSocialFB {border-radius:0;padding: 6px 12px 6px 0; border: 1px solid #ddd; background-color: #345696; color: #fff; margin-right: 12px;}
+.logSocialG {border-radius:0;padding: 6px 12px 6px 0; border: 1px solid #ddd; background-color: #e64030; color: #fff;margin-left: 12px;}
+.logSocialIcon {background-color: #fff;padding: 6px 12px 7px 12px;}
+.logSocialIcon .fa-facebook {color: #345696;}
+.logSocialIcon .fa-google {color: #e64030;}
+.fbTXT, .gTXT {color:#fff;padding:0 0 0 12px;}
+.navbar-default { background-color: transparent !important;  border-color: transparent !important;  margin-bottom: 0px;}
+/*Signinend*/
+
+/*dropdown*/
+.custom-dropdown li { width: 100%; margin: 0px !important;border-bottom: 1px solid #dadada;}
+.custom-dropdown li a{line-height: 28px !important;text-align:left !important;}
+.custom-dropdown li:hover a ,.dropdown-main:hover a{border-bottom: none !important; color:#556268 !important;}
+.custom-dropdown{ margin: 0px !important;    border-radius: 0px;    box-shadow: 0px 0px 2px 0px;}
+.dropdown-main:hover > ul.dropdown-menu {    display: block;    }
+.custom-dropdown li a:hover {color:#337ab7 !important;}
+.custom-dropdown li a .fa.fa-angle-double-right {color:#556268;margin-right: 5px;font-size: 13px;}
+
+/*! Footer v1.1.1 
+ * Copyright 2020-2021 letsbooktheflights.
+*/
+/*Footer View more*/
+a.collapsed .hide-ad { display:inline-block !important;}a.collapsed .show-ad { display:none !important;}
+.show-ad {display:inline-block;}
+.hide-ad{display:none;}
+.fare-text{width:100%; float:left;padding:8px 0;}
+.fare-text p{font: 300 13px/20px Arial, Helvetica, sans-serif; margin: 10px 0;color: #969c9e;}
+.connect{width:100%; float:left;background:#f5f5f5;padding:20px 0;}
+.one-half{width:50%;float:left;border-right:1px solid #e2e3e3;}
+.one-half:last-child{border:none}
+.one-half span.my-label{float:left;text-align:left;font:400 30px/55px Arial, Helvetica, sans-serif;}
+.one-half ul{margin:5px 15px 5px 75px;padding:0px;list-style:none;float:left;}
+.one-half ul._connectWith{margin-left:52px;}
+.one-half ul li{display:inline-block;}
+.one-half ul li a{float:left;margin: 0 5px;font-size: 40px;} 
+.pinterest,.pinterest:hover,.pinterest:focus {color: #cb2027}
+.twitter,.twitter:hover,.twitter:focus {color: #00cafb}
+.facebook_,.facebook_:hover,.facebook_:focus {color: #3b5998}
+.youtube,.youtube:hover,.youtube:focus {color: red}
+.one-half .sign-up-box{width: 85%;} 
+.one-half .sign-up-box .wrap .form-control {width: 350px;}
+.one-half .sign-up-box .wrap .submit{background:#177fb0;}
+.footer{width:100%;float:left;padding:8px 0 0 0;}
+.footer h3{ font: 400 20px/30px Arial, Helvetica, sans-serif;color:#2f2f2f;}
+.footer ul{list-style:none}
+.footer ul li a{font: 300 12px/30px Arial, Helvetica, sans-serif;color:#848b8d;text-transform:capitalize;}
+.footer ul.mffooter__Qlinks {margin-bottom: 0;}
+.footer .mfs_dynamiclinks{border-bottom: 1px solid #f0f0f0;}
+.footer .mfs_dynamiclinks .view-more {padding-bottom: 10px;}
+.footer .mfs_dynamiclinks .view-more a > span{font-size: 12px; color:#848b8d;}
+.footer .mfs_dynamiclinks .view-more a:hover > span{color:#137fb0;}
+.footer ul li a:hover{font: 300 12px/30px Arial, Helvetica, sans-serif;color:#000;text-decoration:none;}
+.airline.active{background:#f5f5f5;}
+.blue-footer{width:100%; float:left; background:#137fb0;padding:25px 0;}
+.blue-footer h4{ font-size:20px;color:#fff;}
+.blue-footer ul li a{color:#fff;font: 300 14px/30px Arial, Helvetica, sans-serif;}
+.blue-footer ul li a:hover{color:#f1f1f1;font: 400 14px/30px Arial, Helvetica, sans-serif;}
+.blue-footer .addrss{color:#fff;margin:5px 0; font: 300 14px/20px Arial, Helvetica, sans-serif;background:  url(/travelresources/Images/New_Home/images/home-address.png) no-repeat left center;padding-left:25px;}
+.blue-footer .mailto a, .blue-footer .telno a{color:#fff;margin:5px 0;display:inline-block;font: 300 14px/20px Arial, Helvetica, sans-serif;}
+.blue-footer .mailto a .mfsIcon-subscribe {display: inline-block;vertical-align: middle;margin-top: 3px;margin-right: 15px}
+.blue-footer .telno a .mfsIcon-telephone-new {display: inline-block;margin-top: 3px;margin-right: 11px;}
+
+.blue-footer p{color:#fff;}
+.copy-right{width:100%; float:left;padding:10px 0;}
+.copy-right p{margin:3px 0px;}
+.copy-right p{font: 300 14px/20px Arial, Helvetica, sans-serif;color:#969c9e;}
+.car-grid .tab-content{display:none}
+.copy-right-pay p {font-size:12px; color:#000; font-family:Arial, Helvetica, sans-serif;margin-top: 5px;}
+.copy-right-footer .container {    padding: 1% 0;}
+.marb10 {margin-bottom:10px}
+.marb0 {margin-bottom:0px;}
+.copy-right-footer {background:#e7e7e7;}
+.blue-footer .app-icon {margin-right:10px;margin-top:10px;float:left;}
+.mobile-view-padding div img {max-width:100%;}
+.sitemap-footer-hr { width: 100%;float: left;background: #f5f5f5;padding: 1px 0;}
+.websecurity_warp, .rapidscan_warp { width: 30%; display: inline-block; }
+.rapidscan_warp { border-left: 1px solid #c5c5c5; padding-left: 12px; }
+.mfs_bannerArea {
+    background-image: url("images\flight_banner.png");
+    background-repeat: no-repeat;
+    align-content:center
+}
+
+/* New Css */

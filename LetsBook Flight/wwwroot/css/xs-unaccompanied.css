@@ -1,0 +1,20 @@
+#unc_popWarp{font-family: Arial, Helvetica, sans-serif; position: absolute; z-index:9999; width: 100%; top: 10%; left: 0;}
+#Umnr_popWarp{font-family: Arial, Helvetica, sans-serif; position: fixed; z-index:9999; width: 100%; top: 10%; left: 0;}
+#unc_overlay{position:fixed; top:0; left:0; background:rgba(0,0,0,0.8); z-index:999; width:100%; height:100%; display:none;}
+.unc_dialog{ width: 320px; height: 200px;display: none;}
+.unc_dialog .unc_conatiner{ background: #ffffff;width: 95%;margin: 0 auto;}
+.unc_dialog .unc_heading{background: #0282ba;font-size: 16px;text-align: center;padding: 6px 5px;color: #fff;position: relative;float: left;width: 100%;clear: both;}
+.unc_dialog .unc_heading strong{ font-weight: 600;  }
+.unc_dialog .unc_heading a.unc_close{color: #0282ba; /*background: #fff*/;position: absolute; top: 5px; right: 5px; width:18px; height: 18px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; font-size: 10px;line-height: 17px; z-index: 751; }
+.unc_dialog .unc_heading a.unc_close i.fa.fa-times{color: #0282ba; }
+.unc_dialog .unc_conatiner .unc_content{padding: 12px 18px;clear: both; text-align: center;}
+.unc_dialog .unc_conatiner .unc_content p{ font-size: 14px; line-height: 20px; color: #333; }
+.unc_dialog .unc_conatiner .unc_content a.unc_callNow{ font-size: 14px; font-weight: 700; line-height: 20px; color: #fff; background: #e86814; padding:8px;border: 1px solid #d85601;border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;clear: both; text-decoration: none; display: inline-table;margin-bottom: 15px; margin-top: 5px;}
+.unc_dialog .unc_conatiner .unc_content a.unc_callNow span{display: table-cell;}
+.unc_dialog .unc_conatiner .unc_content a.unc_callNow .unc_nubmer{padding-left: 4px;}
+.unc_dialog .unc_conatiner .unc_content a.unc_callNow .unc_calltext{padding-left: 20px;}
+.unc_dialog .unc_conatiner .unc_content a.unc_callNow .unc_call_icon{width: 22px;}
+.unc_dialog .unc_conatiner .unc_content a.unc_callNow .unc_call_icon img{ max-width: 100%; height: auto;}
+.unc_dialog .unc_conatiner .unc_highlight{color: #74a102;}
+span.pmtCloseIcon { background-position: -3px 119px; height: 25px; width: 25px; display: inline-block;}
+.paymentPageIcon { background-image: url(/travelresources/Images/xs-pymtMobile/paymentPage-icon1.png) !important;}

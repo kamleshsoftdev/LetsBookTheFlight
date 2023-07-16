@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetsBook Flight", "LetsBook Flight\LetsBook Flight.csproj", "{EFD6F507-AA69-47C4-BBAB-16B0CA2C3DBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFD6F507-AA69-47C4-BBAB-16B0CA2C3DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD6F507-AA69-47C4-BBAB-16B0CA2C3DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD6F507-AA69-47C4-BBAB-16B0CA2C3DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD6F507-AA69-47C4-BBAB-16B0CA2C3DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0512F6BA-98C1-46D9-8A2F-3BDA1073CAFB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1463 @@
+﻿<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="~/js/custom.js"></script>
+
+<script src="~/js/flight.js"></script>
+@*
+<link href="~/css/cdnjs/all.min.css" rel="stylesheet" />*@
+<link href="~/css/mfsfontsicons.css" rel="stylesheet" />
+<main role="main" class="mfs_main-wrapper">
+
+    <div class="wraper mfcontainer__mainWrap">
+
+        <div class="container-fluid positionR widget-section">
+            <div class="banner mfs_bannerArea hidden-xs"></div>
+            <div class="container _wigetArea">
+                <div class="mfs_SearchWidgetWarp">
+
+
+                    <div class="col-md-6 col-sm-12 desktop-ser">
+                        <div class="search-bar ">
+                            <div class=" text-center heading-tab-only hidden-xs">
+                                <p class="heading-tab-small">Travel Across the <span>Globe!</span><span class="heading-tab-bold"> BOOK NOW &amp; SAVE AMOUNT!</span></p>
+                            </div>
+                            <div class=" text-center heading-mobile-only visible-xs">
+                                <p class="visible-xs heading-tab-small mobile-heading">Travel Across the <span>Globe!</span> Book Now &amp; Save Amount!</p>
+                            </div>
+
+                            <ul class="list-inline tab-bar ">
+                                <li class="active"><a href="#search-flight" aria-controls="search-flight" role="tab" data-toggle="tab"><span class="flight_design"></span><p id="logo_text">FLIGHTS</p></a></li>
+                                @*<li><a href="#search-hotel" aria-controls="search-hotel" role="tab" data-toggle="tab" aria-expanded="false"><i class='fas fa-bed' style='font-size:36px'></i>HOTELS</a></li>
+                                <li><a href="#search-car" aria-controls="search-car" role="tab" data-toggle="tab"><i class='fas fa-car' style='font-size:36px'></i>CARS</a></li>*@
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active pad10" id="search-flight">
+                                    <div class="mfsPartial_flightWidget">
+                                        <form action="https://www.letsbooktheflights.com/Flight/Index_new?flightid=11cac07d-6f43-4f3f-883a-a8f868590fd2" class="setcolor" method="post">
+                                            <div>
+                                                <ul class="list-inline marl10 mart10">
+                                                    <li>
+                                                        @*<p class="trip-type one-ways clor-light" onclick="tripTypeUpdate('oneWay')">ONE WAY</p>*@
+                                                        <input type="radio" id="rtway" class="trip-type round-trip" name="radio_trip" checked onclick="tripType_update('roundtrip')" />
+                                                        <label for="triptype">Round Trip</label>
+                                                    </li>
+                                                    @*<li>
+                                                        <div class="Switch Switch-flight Round Off">
+                                                            <div class="Toggle"></div>
+                                                        </div>
+                                                    </li>*@
+                                                    <li>
+                                                        @*<p class="trip-type round-trip " onclick="tripTypeUpdate('roundTrip')">ROUND TRIP</p>*@
+                                                        <input type="radio" id="oneway" class="trip-type round-trip" name="radio_trip" onclick="tripType_update('oneway')" />
+                                                        <label for="triptype">One Way</label>
+                                                    </li>
+                                                </ul>
+
+                                                <div id="mainErrorCover">
+                                                    <span><span class="field-validation-valid" data-valmsg-for="Origin" data-valmsg-replace="true"></span></span>
+                                                    <span><span class="field-validation-valid" data-valmsg-for="Destination" data-valmsg-replace="true"></span></span>
+                                                    <span><span class="field-validation-valid" data-valmsg-for="Departure" data-valmsg-replace="true"></span></span>
+                                                    <span><span class="field-validation-valid" data-valmsg-for="Arrival" data-valmsg-replace="true"></span></span>
+                                                    <span><span class="field-validation-valid" data-valmsg-for="NumberofTraveler" data-valmsg-replace="true"></span></span>
+
+                                                    <span id="spnOrigin" style="display: none;"></span>
+                                                    <span id="spnDestination" style="display: none;"></span>
+                                                    <span id="destinat" style="display: none;"></span>
+                                                    <span id="spnOriginDestination" style="display: none;"></span>
+                                                    <span id="spnDepartual" style="display: none;"></span>
+                                                    <span id="spnArrival" style="display: none;"></span>
+                                                    <span id="spnAdult" style="display: none;"></span>
+                                                    <span id="spnChildren" style="display: none;"></span>
+                                                    <span id="spnTotalTraveller" style="display: none;"></span>
+                                                    <span id="spnTotalInfant" style="display: none;"></span>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-5 col-xs-5 location-box">
+                                                        <div class="custom_input ">
+                                                            <label>Origin</label>
+                                                            <div class="location_wrapper">
+
+                                                                <input class="main_location form-control font37 ui-autocomplete-input" data-val="true" data-val-required="+ Please provide From City / Airport Code" id="Origin" name="Origin" onblur="this.placeholder = &#39;From&#39;" onfocus="this.placeholder = &#39;&#39;" placeholder="From" spellcheck="false" tabindex="1" type="text" value="" autocomplete="off">
+                                                                <input id="subLocOrigin" class="sub_location form-control" value="" placeholder="Airport or City Name" readonly="true" onfocus="this.blur()">
+                                                                <span class="clear-input" style="display: none;">X</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 col-xs-2 padl5i5 padl-tab">
+                                                        @*<span class="mfsIcon-flight flight-type-icon widget-iconColor"></span>*@
+                                                        <span class="lbtfIcon-flight"></span>
+                                                        </div>
+                                                    <div class="col-sm-5 col-xs-5 location-box">
+                                                        <div class="custom_input ">
+                                                            <label>Destination</label>
+                                                            <div class="location_wrapper  " id="destinationMailDiv">
+
+                                                                <input class="main_location form-control font37 ui-autocomplete-input" data-val="true" data-val-required="+ Please provide To City / Airport Code" id="Destination" name="Destination" onblur="this.placeholder = &#39;To&#39;" onfocus="this.placeholder = &#39;&#39;" placeholder="To" spellcheck="false" tabindex="2" type="text" value="" autocomplete="off">
+                                                                <input id="subLocDestination" class="sub_location form-control" value="" readonly="true" placeholder="Airport or City Name" onfocus="this.blur()">
+                                                                <span class="clear-input-des" style="display: none;">X</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mart15 input-daterange ">
+                                                    <div class="col-sm-7 col-xs-5 location-box">
+                                                        <div class="custom_input ">
+                                                            <label>Departure Date</label>
+                                                            <div class="location_wrapper mobil-wrapper calneder_icon_open search-set-icon mdddeprtWapr">
+                                                                @*<span class="mfsIcon-calendar calender-mobile widget-iconColor"></span>*@
+                                                               
+                                                                <input value="Mon,Jan,01,001" class="main_location form-control font30 display-none hasDatepicker" data-val="true" data-val-date="The field Departure must be a date." data-val-required="+ Please provide Departure Date" id="txtDepartual" name="Departure" onfocus="this.blur()" placeholder="SELECT" readonly="readonly" type="text">
+
+                                                                <div id="depart-cal" class="cale-sel hidden-xs">
+                                                                    <p class="marb-5">
+                                                                        <span id="departmonth" class="sel-mnth font30 "></span>
+                                                                        <span id="departday" class="sel-day font30">Select</span>
+                                                                    </p>
+                                                                    <span id="departdayname" class="sel-name"></span><span id="departyear" class="sel-year">Date</span>
+                                                                </div>
+                                                                <div id="depart-cals" class="cale-sel visible-xs" data-toggle="modal" onclick="showCalendar('depart')">
+                                                                    <p class="marb-5">
+                                                                        <span id="departmonthmob" class="sel-mnth font30 "></span><span id="departdaymob" class="sel-day font30">Select</span>
+                                                                    </p>
+                                                                    <span id="departdaynamemob" class="sel-name"></span><span id="departyearmob" class="sel-year">Date</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p id="lbf-calender"><i class="fas fa-calendar"></i></p>
+                                                    <div class="col-xs-2 padl-tab"><span class="br-right visible-xs"></span></div>
+                                                    <div class="col-sm-5 col-xs-5 location-box" id="hide-round">
+                                                        <div class="custom_input ">
+                                                            <label>Return Date</label>
+                                                            <div class="location_wrapper mobil-wrapper ">
+                                                                <span class="mfsIcon-calendar calender-mobile widget-iconColor visible-xs"></span>
+
+                                                                <input value="Mon,Jan,01,001" class="main_location form-control font30 display-none hasDatepicker" data-val="true" data-val-date="The field Arrival must be a date." data-val-required="+ Please provide Arrival Date" id="txtArrival" name="Arrival" onfocus="this.blur()" placeholder="SELECT" readonly="readonly" type="text">
+
+
+                                                                <div id="arrive-cal" class="cale-sel hidden-xs">
+                                                                    <p class="marb-5"><span id="arrmonth" class="sel-mnth font30 "></span> <span id="arrday" class="sel-day font30">Select</span></p>
+                                                                    <span id="arrdayname" class="sel-name"></span> <span id="arryear" class="sel-year">Date</span>
+                                                                </div>
+                                                                <div id="arrive-cals" class="cale-sel visible-xs" data-toggle="modal" onclick="showCalendar('arrival')">
+                                                                    <p class="marb-5"><span id="arrmonthmob" class="sel-mnth font30 "></span> <span id="arrdaymob" class="sel-day font30">Select</span></p>
+                                                                    <span id="arrdaynamemob" class="sel-name"></span> <span id="arryearmob" class="sel-year">Date</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mart15">
+                                                    <div class="col-sm-5 col-xs-5 location-box">
+                                                        <div class="custom_input ">
+
+                                                            <div class="location_wrapper" id="show-passenger">
+                                                               @* <span class="search-set-icon passenger-counts-icon mfsIcon-passengers widget-iconColor"></span>*@
+                                                                <i class='fas fa-user-alt' style='font-size:36px'></i>
+                                                                <input class=" form-control other-fields " id="hideshow" value="" readonly="readonly" placeholder="">
+                                                                <span id="span_flightpassanger" class="passengers-text ">Passenger</span>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 col-xs-2 padl-tab"><span class="search-set-icon divide-icon hidden-xs"></span><span class="br-right visible-xs" style="top: 9px;"></span></div>
+                                                    <div class="col-sm-5 location-box col-xs-5">
+                                                        <div class="custom_input ">
+
+                                                            <div class="location_wrapper position-rel">
+                                                                @*<span class="search-set-icon book-class-icon mfsIcon-class widget-iconColor"></span>*@
+                                                             
+                                                               @* <i class="fa-solid fa-person-seat"></i>*@
+                                                                <span class="airline_seat_icon"></span>
+                                                                <select class="form-control  other-fields" id="FlightClass" name="FlightClass">
+                                                                    <option value="2">Economy</option>
+                                                                    <option value="4">Business</option>
+                                                                    <option value="6">First</option>
+                                                                </select>
+                                                                <span class="angle_down">
+                                                                <i class="fa fa-angle-down" style="font-size:24px"></i>
+                                                                </span>
+                                                                @*<span class="mfsIcon-angle-down widget-iconColor"></span>*@
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div id="content" class="passenger-count">
+                                                    <a class="close-panel-flight">
+                                                        <img src="./images/cross-icon.png" alt="Lets Book the Flight">
+                                                    </a>
+                                                    <div id="dvSearchUser">
+                                                        <div class="row row-mbar">
+                                                            <div class="col-md-6 col-sm-6 col-xs-6 text-center ">
+                                                                <p>Adult</p>
+                                                                <input id="btnAdultDecrease" type="button" value="–" class="qtyminus" field="quantity" style="font-weight: bold;">
+                                                                <input value="1" class="qty adultIndex form-control" data-val="true" data-val-number="The field AdultCount must be a number." data-val-required="The AdultCount field is required." id="AdultCount" name="AdultCount" readonly="readonly" type="text">
+
+                                                                <input id="btnAdultIncrease" type="button" value="+" class="qtyplus" field="quantity" style="font-weight: bold;">
+
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-6 col-xs-6 add-form text-center">
+                                                                <p>Child</p>
+                                                                <input id="btnchildDecrease" type="button" value="–" class="qtyminus" field="quantity1" style="font-weight: bold;">
+                                                                <input id="TotalChildCount" type="text" name="quantity1" value="0" class="qty childIndex" readonly="">
+                                                                <input id="btnchildIncrease" type="button" value="+" class="qtyplus" field="quantity1" style="font-weight: bold;">
+                                                            </div>
+                                                        </div>
+                                                        <div id="Addchild" class="row mart15"></div>
+                                                        <button type="button" class="btn btn-primary pull-right submit-btn close-panel-flight-new">Done</button>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row mart15 collapse" id="collapseadvance">
+                                                    <div class="col-sm-7 col-xs-7 location-box hidden">
+                                                        <div class="custom_input">
+                                                            <div class="location_wrapper">
+                                                                <input autocomplete="off" class="form-control advance-field ui-autocomplete-input" id="BindPreferedairlines" name="BindPreferedairlines" placeholder="Preferred Airlines" type="text" value="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-5 col-xs-5 location-box mfs_fNonstp hidden">
+                                                        <input class="mart15 mfsadv-checkbox" data-val="true" data-val-required="The NonstopFlights field is required." id="NonstopFlights" name="NonstopFlights" type="checkbox" value="true"><input name="NonstopFlights" type="hidden" value="false">
+                                                        <label class="checkBoxlabel" for="NonstopFlights">Non-stop flights</label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="loader-btn-home flight-view">
+                                                    <p class="button-load disabled in-progress">Please wait...</p>
+                                                </div>
+                                                <button class="btn-custom-search text-center mart10 FlightSearchWidgetClick" id="btnSearchsubmit" onclick="return ValidateSearchForm(&#39;true&#39;);">SEARCH NOW</button>
+
+
+
+                                                <input data-val="true" data-val-number="The field SeniorCount must be a number." data-val-required="The SeniorCount field is required." id="SeniorCount" name="SeniorCount" type="hidden" value="0">
+                                                <input data-val="true" data-val-number="The field TotalChildCount must be a number." data-val-required="The TotalChildCount field is required." id="TotalChildCount" name="TotalChildCount" type="hidden" value="0">
+                                                <input data-val="true" data-val-number="The field ChildCount must be a number." data-val-required="The ChildCount field is required." id="ChildCount" name="ChildCount" type="hidden" value="0">
+                                                <input data-val="true" data-val-number="The field Child12To17Count must be a number." data-val-required="The Child12To17Count field is required." id="Child12To17Count" name="Child12To17Count" type="hidden" value="0">
+                                                <input data-val="true" data-val-number="The field InfantCount must be a number." data-val-required="The InfantCount field is required." id="InfantCount" name="InfantCount" type="hidden" value="0">
+                                                <input data-val="true" data-val-number="The field InfantInlapCount must be a number." data-val-required="The InfantInlapCount field is required." id="InfantInlapCount" name="InfantInlapCount" type="hidden" value="0">
+                                                <input id="OriginCode" name="OriginCode" type="hidden" value="">
+                                                <input id="DestinationCode" name="DestinationCode" type="hidden" value="">
+                                                <input id="OriginCityCode" name="OriginCityCode" type="hidden" value="">
+
+                                                <input id="DestinationCityCode" name="DestinationCityCode" type="hidden" value="">
+                                                <input id="PreferedairlinesCode" name="PreferedairlinesCode" type="hidden" value="">
+                                                <input id="NumberofTraveler" name="NumberofTraveler" type="hidden" value="">
+                                                <input id="UTMSource" name="UTMSource" type="hidden" value="">
+                                                <input id="hdnChildAge" name="hdnChildAge" type="hidden" value="">
+                                                <input id="UTMSource" name="UTMSource" type="hidden" value="">
+                                                <input id="UTMCampaign" name="UTMCampaign" type="hidden" value="">
+                                                <input id="UTMMedium" name="UTMMedium" type="hidden" value="">
+
+                                                <input id="UTMAdgroup" name="UTMAdgroup" type="hidden" value="">
+                                                <input id="UTMTerm" name="UTMTerm" type="hidden" value="">
+                                                <input id="UTMCreative" name="UTMCreative" type="hidden" value="">
+                                                <input id="UTMDevice" name="UTMDevice" type="hidden" value="">
+                                                <input id="UTMMatchtype" name="UTMMatchtype" type="hidden" value="">
+                                                <input id="UTMtargetid" name="UTMtargetid" type="hidden" value="">
+
+                                                <input id="TollFreeNumber" name="TollFreeNumber" type="hidden" value="1-888-884-4555">
+                                                <input id="OriginCountryCode" name="OriginCountryCode" type="hidden" value="">
+                                                <input id="DestinationCountryCode" name="DestinationCountryCode" type="hidden" value="">
+                                                <input id="RoundMultiOnewayTrip" name="RoundMultiOnewayTrip" type="hidden" value="ROUNDTRIP">
+                                                <input id="Departuretemp" name="Departuretemp" type="hidden" value="01/01/001">
+                                                <input id="Arrivaltemp" name="Arrivaltemp" type="hidden" value="01/01/001">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <script src="./jquery.touchswipe.min.js"></script>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="search-hotel">
+                                    <div class="mfsPartial_hotelWidget">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-xs-12 location-box error-hotel">
+                                                <span id="Spandestination" class="error-htl" style="display: none;"></span>
+                                                <span id="SpanCheckinDate" class="error-htl" style="display: none;"></span>
+                                                <span id="SpanCheckOutDate" class="error-htl" style="display: none;"></span>
+                                                <span id="SpanChildAgeValidation" class="error-htl" style="display: none;"></span>
+                                                <div class="custom_input ">
+                                                    <label>Destination</label>
+                                                    <div class="location_wrapper htl-des ">
+                                                        <input id="hotelDestination" class="main_location form-control font25 ui-autocomplete-input" value="" placeholder="Destination" autocomplete="off">
+                                                        <span class="clear-input-htl" style="display: none;">X</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mart15">
+                                            <div class="col-sm-5 col-xs-5 location-box">
+                                                <div class="custom_input ">
+                                                    <label>Check In</label>
+                                                    <div class="location_wrapper  mobil-wrapper">
+                                                        <span class="mfsIcon-calendar calender-mobile widget-iconColor visible-xs"></span>
+                                                        <input id="txtCheckIn" class="main_location form-control font30 display-none hasDatepicker" value="" placeholder="DATE" readonly="readonly">
+                                                        <div id="checkin-cal" class="cale-sel hidden-xs">
+                                                            <p class="marb-5">
+                                                                <span id="checkinmonth" class="sel-mnth font30 "></span>
+                                                                <span id="checkinday" class="sel-day font30">Select</span>
+                                                            </p>
+                                                            <span id="checkindayname" class="sel-name"></span><span id="checkinyear" class="sel-year">Date</span>
+                                                        </div>
+                                                        <div id="checkin-cals" class="cale-sel visible-xs" data-toggle="modal" onclick="showCalendarhtl('depart')">
+                                                            <p class="marb-5">
+                                                                <span id="checkinmonthmob" class="sel-mnth font30 "></span>
+                                                                <span id="checkindaymob" class="sel-day font30">Select</span>
+                                                            </p>
+                                                            <span id="checkindaynamemob" class="sel-name"></span><span id="checkinyearmob" class="sel-year">Date</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 col-xs-2 "><span class="mfsIcon-calendar calender-mobile widget-iconColor hidden-xs"></span><span class="br-right visible-xs"></span></div>
+                                            <div class="col-sm-5 col-xs-5 location-box" id="hide-round">
+                                                <div class="custom_input ">
+                                                    <label>Check Out</label>
+                                                    <div class="location_wrapper mobil-wrapper ">
+                                                        <span class="mfsIcon-calendar calender-mobile widget-iconColor visible-xs"></span>
+
+                                                        <input id="txtCheckOut" class="main_location form-control font30 display-none hasDatepicker" value="" placeholder="DATE" readonly="readonly">
+                                                        <div id="checkout-cal" class="cale-sel hidden-xs">
+                                                            <p class="marb-5">
+                                                                <span id="checkoutmonth" class="sel-mnth font30 "></span>
+                                                                <span id="checkoutday" class="sel-day font30">Select</span>
+                                                            </p>
+                                                            <span id="checkoutdayname" class="sel-name"></span><span id="checkoutyear" class="sel-year">Date</span>
+                                                        </div>
+                                                        <div id="checkout-cals" class="cale-sel visible-xs" data-toggle="modal" onclick="showCalendarhtl('arrival')">
+                                                            <p class="marb-5">
+                                                                <span id="checkoutmonthmob" class="sel-mnth font30 "></span>
+                                                                <span id="checkoutdaymob" class="sel-day font30">Select</span>
+                                                            </p>
+                                                            <span id="checkoutdaynamemob" class="sel-name"></span><span id="checkoutyearmob" class="sel-year">Date</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mart15">
+                                            <div class="col-sm-12 col-xs-12 location-box">
+                                                <div class="custom_input ">
+                                                    <div class="location_wrapper position-rel">
+                                                        <span class=" htl-room mfsIcon-key-htl widget-iconColor"></span>
+                                                        <select class=" form-control other-fields paddtp0" id="roomAdd">
+                                                            <option value="0" id="roomAddOption">1 ROOM, 1 ADULT, 0 CHILD</option>
+                                                            <option value="1">1 Room</option>
+                                                            <option value="2">2 Rooms</option>
+                                                            <option value="3">3 Rooms</option>
+                                                            <option value="4">4 Rooms</option>
+                                                            <option value="5">5 Rooms</option>
+                                                            <option value="6">6 Rooms</option>
+                                                            <option value="7">7 Rooms</option>
+                                                            <option value="8">8 Rooms</option>
+                                                        </select>
+                                                        <span class="mfsIcon-angle-down widget-iconColor"></span>
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" class=" form-control other-fields" id="HotelAdultCount" value="1">
+                                                <input type="hidden" class=" form-control other-fields" id="HotelChildCount" value="0">
+                                                <input type="hidden" class=" form-control other-fields" id="HotelDestinationCityCode">
+                                                <input type="hidden" class=" form-control other-fields" id="DestinationCityName">
+                                                <input type="hidden" class=" form-control other-fields" id="DestinationStateCode">
+                                                <input type="hidden" class=" form-control other-fields" id="DestinationCountryCode">
+                                                <input type="hidden" class=" form-control other-fields" id="Destination" name="Destination">
+                                                <input type="hidden" class=" form-control other-fields" id="NumberofRooms" name="NumberofRooms" value="1">
+                                                <input type="hidden" class=" form-control other-fields" id="AirportCode">
+                                                <input type="hidden" class=" form-control other-fields" id="AirportName">
+                                                <input type="hidden" class=" form-control other-fields" id="CityID_PPN" name="CityID_PPN">
+                                                <input type="hidden" class=" form-control other-fields" id="HotelNumberofTraveler" value="1 Room 1 Guests">
+                                                <input type="hidden" class=" form-control other-fields" id="HotelChildAges">
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 roomD child-age-block margin-custom-child " style="display: none;">
+                                                <div class="cover-widget">
+                                                    <div class="row select-r-panel row-no-margin">
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <h4>Select Rooms Details</h4>
+                                                        </div>
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <a href="javascript:void(0)" class="close-panel">
+                                                                <img src="./images/cross-icon.png" alt="My Fliight search">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <span id="SpanPopupChildAgeValidation" style="display: none; color: red !important;"></span>
+                                                    <div class="" id="roomsPanel"></div>
+                                                    <button type="button" class="btn btn-primary pull-right submit-btn" onclick="return UpdateHotelRoomTravellerInfo();">OK</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <p class="mart15  hidden-xs" style="margin-left: 9px;"><a class="advance-color collapse" role="button" data-toggle="collapse" href="https://www.letsbooktheflights.com/#collapseadvancehtl" aria-expanded="false" aria-controls="collapseadvancehtl">Advance Option <span class="hide-ad">+</span> <span class="show-ad">-</span> </a></p>
+                                        <div class="row mart15 collapse hidden-xs" id="collapseadvancehtl">
+                                            <div class="col-sm-6  location-box">
+                                                <div class="custom_input">
+                                                    <div class="location_wrapper">
+                                                        <input id="HotelName" class="form-control advance-field ui-autocomplete-input" value="" placeholder="Hotel Name" autocomplete="off">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 location-box">
+                                                <div class="location_wrapper  ">
+                                                    <select class=" form-control advance-field" id="HotelRating" name="HotelRating">
+                                                        <option selected="selected" value="0">Hotel Rating</option>
+                                                        <option value="1">1 Star or More</option>
+                                                        <option value="2">2 Stars or More</option>
+                                                        <option value="3">3 Stars or More</option>
+                                                        <option value="4">4 Stars or More</option>
+                                                        <option value="5">5 Stars</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="btn-custom-search text-center mart10 HtlSearchWidgetClick" id="btnHotelSearchsubmit" onclick="return ValidateSearchhotel(true);">SEARCH HOTELS</button>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="search-car">
+                                    <div class="mfsPartial_carWidget">
+                                        <div id="mainErrorCover">
+                                            <span id="spnPickUpLocation" style="display: none;"></span>
+                                            <span id="spnDropLocation" style="display: none;"></span>
+                                            <span id="spnPickupDropOff" style="display: none;"></span>
+                                            <span id="spnPickUpDate" style="display: none;"></span>
+                                            <span id="spnPickUpTime" style="display: none;"></span>
+                                            <span id="spnDropDate" style="display: none;"></span>
+                                            <span id="spnDropTime" style="display: none;"></span>
+                                        </div>
+
+                                        <div class="mfc_carsearch">
+                                            <ul class="list-inline marl10 mart10">
+                                                <li>
+                                                    <p class="trip-type tripDrops clor-light">SAME DROP OFF</p>
+                                                </li>
+                                                <li>
+                                                    <div class="Switch Round Off switch-car">
+                                                        <div class="Toggle"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <p class="trip-type tripDrops">DIFFERENT LOCATION</p>
+                                                </li>
+                                            </ul>
+                                            <div class="row">
+                                                <div class="col-sm-5 col-xs-5 location-box">
+                                                    <div class="custom_input ">
+                                                        <label>Pick Up </label>
+                                                        <div class="location_wrapper  ">
+                                                            <input id="PickUpLocation" class="main_location form-control font37 ui-autocomplete-input" value="" placeholder="Airport " autocomplete="off">
+                                                            <input id="sub_pickupL" class="sub_location form-control" value="" placeholder="City name" readonly="true">
+                                                            <span class="clear-input-kar" style="display: none;">X</span>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-2 col-xs-2 padl5i5 padl-tab"><span class="kar-icon mfsIcon-car-1 widget-iconColor"></span></div>
+                                                <div class="col-sm-5 col-xs-5 location-box" id="hide-round-car">
+                                                    <div class="custom_input ">
+                                                        <label>Drop Off</label>
+                                                        <div class="location_wrapper  ">
+                                                            <input id="DropLocation" class="main_location form-control font37 ui-autocomplete-input" value="" placeholder="Airport" autocomplete="off">
+                                                            <input id="sub_dropL" class="sub_location form-control" value="" placeholder="City name" readonly="true">
+                                                            <span class="clear-input-kar-drop" style="display: none;">X</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mart15">
+                                                <div class="col-sm-5 col-xs-5 location-box">
+                                                    <div class="custom_input ">
+                                                        <label>Pick Up Date</label>
+                                                        <div class="location_wrapper  mobil-wrapper">
+                                                            <span class="mfsIcon-calendar calender-mobile widget-iconColor visible-xs"></span>
+                                                            <input id="PickUpDate" class="main_location form-control font30 display-none hasDatepicker" value="" placeholder="DATE" readonly="readonly">
+                                                            <div id="pickup-cal" class="cale-sel hidden-xs">
+                                                                <p class="marb-5">
+                                                                    <span id="pickupmonth" class="sel-mnth font30 "></span>
+                                                                    <span id="pickupday" class="sel-day font30">Select</span>
+                                                                </p>
+                                                                <span id="pickupdayname" class="sel-name"></span> <span id="pickupyear" class="sel-year">Date</span>
+                                                            </div>
+                                                            <div id="pickup-cals" class="cale-sel visible-xs" data-toggle="modal" onclick="showCalendarkar('depart')">
+                                                                <p class="marb-5">
+                                                                    <span id="pickupmonthmob" class="sel-mnth font30"></span>
+                                                                    <span id="pickupdaymob" class="sel-day font30">Select</span>
+                                                                </p>
+                                                                <span id="pickupdaynamemob" class="sel-name"></span><span id="pickupyearmob" class="sel-year">Date</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-2 col-xs-2 padl-tab"><span class="mfsIcon-calendar calender-mobile widget-iconColor hidden-xs"></span><span class="br-right visible-xs"></span></div>
+                                                <div class="col-sm-5 col-xs-5 location-box" id="hide-round">
+                                                    <div class="custom_input ">
+                                                        <label>Drop Off Date</label>
+                                                        <div class="location_wrapper mobil-wrapper ">
+                                                            <span class="mfsIcon-calendar calender-mobile widget-iconColor visible-xs"></span>
+                                                            <input id="DropDate" class="main_location form-control font30 display-none hasDatepicker" value="" placeholder="DATE" readonly="readonly">
+                                                            <div id="drop-cal" class="cale-sel hidden-xs">
+                                                                <p class="marb-5">
+                                                                    <span id="dropmonth" class="sel-mnth font30 "></span> <span id="dropday" class="sel-day font30">Select</span>
+                                                                </p>
+                                                                <span id="dropdayname" class="sel-name"></span> <span id="dropyear" class="sel-year">Date</span>
+                                                            </div>
+                                                            <div id="drop-cals" class="cale-sel visible-xs" data-toggle="modal" onclick="showCalendarkar('arrival&#39')">
+                                                                <p class="marb-5">
+                                                                    <span id="dropdaymob" class="sel-day font30">Select</span><span id="dropmonthmob" class="sel-mnth font30 "></span>
+                                                                </p>
+                                                                <span id="dropdaynamemob" class="sel-name"></span><span id="dropyearmob" class="sel-year">Date</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mart15">
+                                                <div class="col-sm-5 col-xs-5 location-box">
+                                                    <div class="custom_input ">
+                                                        <label>Pick Up Time</label>
+                                                        <div class="location_wrapper position-rel">
+                                                            <select class="form-control selectpicker drop-select carDropdown valid main_location form-control font30" data-val="true" data-val-required="Please Provide Pickup Time" id="PickUpTime" name="PickUpTime" aria-required="true" aria-invalid="false" aria-describedby="PickUpTime-error">
+                                                                <option value="">Time</option>
+                                                                <option value="00:00 ">00:00 </option>
+                                                                <option value="00:30 ">00:30 </option>
+                                                                <option value="01:00 ">01:00 </option>
+                                                                <option value="01:30 ">01:30 </option>
+                                                                <option value="02:00 ">02:00 </option>
+                                                                <option value="02:30 ">02:30 </option>
+                                                                <option value="03:00 ">03:00 </option>
+                                                                <option value="03:30 ">03:30 </option>
+                                                                <option value="04:00 ">04:00 </option>
+                                                                <option value="04:30 ">04:30 </option>
+                                                                <option value="05:00 ">05:00 </option>
+                                                                <option value="05:30 ">05:30 </option>
+                                                                <option value="06:00 ">06:00 </option>
+                                                                <option value="06:30 ">06:30 </option>
+                                                                <option value="07:00 ">07:00 </option>
+                                                                <option value="07:30 ">07:30 </option>
+                                                                <option value="08:00 ">08:00 </option>
+                                                                <option value="08:30 ">08:30 </option>
+                                                                <option value="09:00 ">09:00 </option>
+                                                                <option value="09:30 ">09:30 </option>
+                                                                <option value="10:00 ">10:00 </option>
+                                                                <option value="10:30 ">10:30 </option>
+                                                                <option value="11:00 ">11:00 </option>
+                                                                <option value="11:30 ">11:30 </option>
+                                                                <option value="12:00 ">12:00 </option>
+                                                                <option value="12:30 ">12:30 </option>
+                                                                <option value="13:00 ">13:00 </option>
+                                                                <option value="13:30 ">13:30 </option>
+                                                                <option value="14:00 ">14:00 </option>
+                                                                <option value="14:30 ">14:30 </option>
+                                                                <option value="15:00 ">15:00 </option>
+                                                                <option value="15:30 ">15:30 </option>
+                                                                <option value="16:00 ">16:00 </option>
+                                                                <option value="16:30 ">16:30 </option>
+                                                                <option value="17:00 ">17:00 </option>
+                                                                <option value="17:30 ">17:30 </option>
+                                                                <option value="18:00 ">18:00 </option>
+                                                                <option value="18:30 ">18:30 </option>
+                                                                <option value="19:00 ">19:00 </option>
+                                                                <option value="19:30 ">19:30 </option>
+                                                                <option value="20:00 ">20:00 </option>
+                                                                <option value="20:30 ">20:30 </option>
+                                                                <option value="21:00 ">21:00 </option>
+                                                                <option value="21:30 ">21:30 </option>
+                                                                <option value="22:00 ">22:00 </option>
+                                                                <option value="22:30 ">22:30 </option>
+                                                                <option value="23:00 ">23:00 </option>
+                                                                <option value="23:30 ">23:30 </option>
+                                                            </select>
+                                                            <span class="mfsIcon-angle-down widget-iconColor"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2 col-xs-2 padl-tab"><span class="divide-icon hidden-xs"></span><span class="br-right visible-xs" style="top: 9px;"></span></div>
+
+                                                <div class="col-sm-5 location-box col-xs-5">
+                                                    <div class="custom_input ">
+                                                        <label>Drop Off Time</label>
+                                                        <div class="location_wrapper position-rel">
+                                                            <select class="form-control selectpicker drop-select carDropdown valid main_location form-control font30" data-val="true" data-val-required="Please Provide Drop Off Time" id="DropTime" name="DropTime" onchange="DropTimeFocusout();">
+                                                                <option value="">Time</option>
+                                                                <option value="00:00 ">00:00 </option>
+                                                                <option value="00:30 ">00:30 </option>
+                                                                <option value="01:00 ">01:00 </option>
+                                                                <option value="01:30 ">01:30 </option>
+                                                                <option value="02:00 ">02:00 </option>
+                                                                <option value="02:30 ">02:30 </option>
+                                                                <option value="03:00 ">03:00 </option>
+                                                                <option value="03:30 ">03:30 </option>
+                                                                <option value="04:00 ">04:00 </option>
+                                                                <option value="04:30 ">04:30 </option>
+                                                                <option value="05:00 ">05:00 </option>
+                                                                <option value="05:30 ">05:30 </option>
+                                                                <option value="06:00 ">06:00 </option>
+                                                                <option value="06:30 ">06:30 </option>
+                                                                <option value="07:00 ">07:00 </option>
+                                                                <option value="07:30 ">07:30 </option>
+                                                                <option value="08:00 ">08:00 </option>
+                                                                <option value="08:30 ">08:30 </option>
+                                                                <option value="09:00 ">09:00 </option>
+                                                                <option value="09:30 ">09:30 </option>
+                                                                <option value="10:00 ">10:00 </option>
+                                                                <option value="10:30 ">10:30 </option>
+                                                                <option value="11:00 ">11:00 </option>
+                                                                <option value="11:30 ">11:30 </option>
+                                                                <option value="12:00 ">12:00 </option>
+                                                                <option value="12:30 ">12:30 </option>
+                                                                <option value="13:00 ">13:00 </option>
+                                                                <option value="13:30 ">13:30 </option>
+                                                                <option value="14:00 ">14:00 </option>
+                                                                <option value="14:30 ">14:30 </option>
+                                                                <option value="15:00 ">15:00 </option>
+                                                                <option value="15:30 ">15:30 </option>
+                                                                <option value="16:00 ">16:00 </option>
+                                                                <option value="16:30 ">16:30 </option>
+                                                                <option value="17:00 ">17:00 </option>
+                                                                <option value="17:30 ">17:30 </option>
+                                                                <option value="18:00 ">18:00 </option>
+                                                                <option value="18:30 ">18:30 </option>
+                                                                <option value="19:00 ">19:00 </option>
+                                                                <option value="19:30 ">19:30 </option>
+                                                                <option value="20:00 ">20:00 </option>
+                                                                <option value="20:30 ">20:30 </option>
+                                                                <option value="21:00 ">21:00 </option>
+                                                                <option value="21:30 ">21:30 </option>
+                                                                <option value="22:00 ">22:00 </option>
+                                                                <option value="22:30 ">22:30 </option>
+                                                                <option value="23:00 ">23:00 </option>
+                                                                <option value="23:30 ">23:30 </option>
+                                                            </select>
+                                                            <span class="mfsIcon-angle-down widget-iconColor"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <input type="hidden" class="form-control other-fields" id="PickupAirportCode">
+                                            <input type="hidden" class="form-control other-fields" id="PickUpCityCode">
+                                            <input type="hidden" class="form-control other-fields" id="PickupAirportName">
+                                            <input type="hidden" class="form-control other-fields" id="DropAirportCode">
+                                            <input type="hidden" class="form-control other-fields" id="DropCityCode">
+                                            <input type="hidden" class="form-control other-fields" id="DropCityName">
+                                            <input type="hidden" class="form-control other-fields" id="hfPickUpLocation">
+                                            <input type="hidden" class="form-control other-fields" id="hfDropOffLocation">
+                                            <button type="button" class="btn-htl-search CarSearchWidgetClick text-center mart10" id="btnCarSearchsubmit" onclick="return ValidateCarForm(true);">SEARCH CARS</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6 col-sm-5 hidden-xs hide-ipad">
+                        <div class="positionR _wigetContent _evntproperties">
+
+
+                            <h2 class="sub-heading">Travel Across the <span>Globe!</span></h2>
+                           @* <h2 class="heading-banner">BOOK NOW &amp; SAVE!</h2>*@
+
+
+
+                            <div class="trustpilot-warp hidden-xs hide_tab">
+                                <ul class="trustpilot-group">
+                                    @*<li class="col-md-3 col-sm-3 trustPilot">
+
+                                        <img src="./images/CompliAssure_Secured.png">
+                                        <p>powered by Aperia</p>
+                                    </li>
+                                    <li class="col-md-4 col-sm-4 bbbIcon text-center">
+
+                                        <img alt="Norton Seal" src="./images/getseal.jpg">
+                                    </li>
+                                    <li class="col-md-4 col-sm-4 fbIcon text-center">
+
+                                        <span class="svg_bgr svg-thumup" aria-hidden="true">Like 52K</span>
+
+                                        <p>Facebook users like us and so will you!</p>
+                                    </li>*@
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mfs_trustpilot_sm visible-sm">
+                        <ul class="trustpilot-group">
+                            @*<li class="col-md-3 col-sm-3 trustPilot">
+
+                                <img src="./images/CompliAssure_Secured.png">
+                                <p>powered by Aperia</p>
+                            </li>
+                            <li class="col-md-4 col-sm-4 bbbIcon text-center">
+
+                                <img alt="Norton Seal" src="./images/getseal.jpg">
+                            </li>
+                            <li class="col-md-4 col-sm-4 fbIcon text-center">
+
+                                <span class="svg_bgr svg-thumup" aria-hidden="true">Like 52K</span>
+
+                                <p>Facebook users like us and so will you!</p>
+                            </li>*@
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section id="mfs_serviceBox" class="service-box-area hidden-xs clearfix">
+
+            <div class="container">
+                <div class="col-xs-12 col-md-6  mfs_whyus text-center">
+                    <div class="col-md-12"><h2>Why Book With Us?</h2></div>
+                    <div class="col-md-12 whyBook-content">
+                        <ul>
+                            <li class="nthChild1"><i class="_sprite  mfsIcon-shield widget-iconColor"></i><span>Best Prices<br>GUARANTEED</span></li>
+                            <li class="nthChild2"><i class="_sprite  mfsIcon-booking-assist widget-iconColor"></i><span>24/7 Booking<br>Assistance</span></li>
+                            <li class="nthChild3"><i class="_sprite  mfsIcon-secure widget-iconColor"></i><span>Fast, Easy &amp; Secure<br>Reservations</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-5 _signUpWarp home_excl-deal">
+
+
+
+
+                    <link href="./images/commonSubsciption.css" rel="stylesheet">
+                    
+                    <div class="exclusive-deals text-center">
+                        <h3 class="first-heading">Sign Up Now Instant Savings!</h3>
+                        <div class="success-hide">
+                            <p>Our latest deals - delivered right to your inbox. </p>
+                            <p>Sign up now to get an Instant Promo Code for <span class="color_blue"> $20 OFF </span>your next booking!</p>
+                            <div class="deals-sub">
+                                <div class="deals-sub-in">
+                                    <input type="text" id="txtsubemail" value="" class="clsTxtsubemail deals-sub-box " placeholder="Enter email address">
+                                    <input type="button" value="Subscribe" id="subscribeBtn" onclick="return SendNewsLetterEmailSubscribe(&#39;1&#39;, &#39;Home&#39;)" class="btn btn-cst btn-succees EmailSignup submit-btn-Icon listing-Icon">
+                                    <div class="clearfix"></div>
+
+                                    <span id="subcribemsgforsessionout" class="alert-danger"></span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="welcomepromo" class="show-when-success hide">
+                            <h3>Sign Up Now Instant Savings!</h3>
+                            <p><strong>Thank You for Signing Up!</strong></p><p>Here is your Instant Promo Code for <strong> $20 OFF</strong> your next booking! </p>
+
+                            <span class="welcome-promo" id="subscribeBtn1">OnTimeSaver</span>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+        <div class="clearfix"></div>
+        <section id="mfs_mserviceBox" class="visible-xs clearfix">
+            <div class="container">
+                <div class="row service-area-mob">
+                    <div class="col-xs-4">
+                        <img class="" src="./images/Seal-secure.jpg" style="margin-top: 13px;">
+
+                    </div>
+                    <div class="col-xs-4 best-price-mob">
+
+
+
+                        <img alt="Norton Seal" src="./images/getseal_mbl.jpg">
+                        <span style="font-size: 9px;color: #a0a0a0; position: relative; top: -5px;">powered by <span style="color: #0174c3;font-weight: 700;font-family: arial;">digicert<sup style="font-size: 3px;top: -4px;">®</sup></span></span>
+                    </div>
+                    <div class="col-xs-4 no-padding fbIcon">
+
+                        <span class="svg_bgr svg-thumup" aria-hidden="true">Like 52K</span>
+
+                        <p>Facebook users like us <br>and so will you!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="deals-in-flight mfs_flightdeals clearfix">
+
+
+            <div class="container">
+                <h1>Top <span>Flight Deals</span> <small>Last Updated Jul 05, 2023, 00:01 AM</small></h1>
+
+                <div id="dvCSV">
+                    <div class="UI_Flight_Deal">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="https://www.letsbooktheflights.com/DealSearch?trip=2&amp;adt=1&amp;chd=0&amp;sen=0&amp;inf=0&amp;infl=0&amp;class=EconomyCoach&amp;from=LAS&amp;to=ONT&amp;depart=07/15/2023&amp;return=07/18/2023" class="FlightDealClick">
+                                    <div class="UI_Deal">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                                                <div class="airline-logo">
+                                                    <img alt="airline-logo" class=" lazyloaded" data-src="/travelresources/Images/AirlineLogo/F9.gif" src="./images/F9.gif">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
+                                                <div class="UI_Deal_Name">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                            <h5>Las Vegas</h5>
+                                                            <span>Jul 15, 2023</span>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 no-padding">
+                                                            <div class="UI_roundtrip_arrow">
+                                                                <i class="UI_roundtrip_arrow mfsIcon-exchange-new"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                            <h5>Ontario</h5>
+                                                            <span>Jul 18, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                                                <div class="UI_dealprice">
+                                                    <label>
+                                                        $61<sup>.75</sup>
+                                                    </label>
+                                                    <button type="button" class="FlightDealClick">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="https://www.letsbooktheflights.com/DealSearch?trip=2&amp;adt=1&amp;chd=0&amp;sen=0&amp;inf=0&amp;infl=0&amp;class=EconomyCoach&amp;from=FLL&amp;to=CHS&amp;depart=07/18/2023&amp;return=07/19/2023" class="FlightDealClick">
+                                    <div class="UI_Deal">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                                                <div class="airline-logo">
+                                                    <img alt="airline-logo" class=" lazyloaded" data-src="/travelresources/Images/AirlineLogo/NK.gif" src="./images/NK.gif">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
+                                                <div class="UI_Deal_Name">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                            <h5>Ft Lauderdale</h5>
+                                                            <span>Jul 18, 2023</span>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 no-padding">
+                                                            <div class="UI_roundtrip_arrow">
+                                                                <i class="UI_roundtrip_arrow mfsIcon-exchange-new"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                            <h5>Charleston</h5>
+                                                            <span>Jul 19, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                                                <div class="UI_dealprice">
+                                                    <label>
+                                                        $81<sup>.59</sup>
+                                                    </label>
+                                                    <button type="button" class="FlightDealClick">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="https://www.letsbooktheflights.com/DealSearch?trip=2&amp;adt=1&amp;chd=0&amp;sen=0&amp;inf=0&amp;infl=0&amp;class=EconomyCoach&amp;from=SNA&amp;to=LAS&amp;depart=07/17/2023&amp;return=07/21/2023" class="FlightDealClick">
+                                    <div class="UI_Deal">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                                                <div class="airline-logo">
+                                                    <img alt="airline-logo" class=" lazyloaded" data-src="/travelresources/Images/AirlineLogo/F9.gif" src="./images/F9.gif" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
+                                                <div class="UI_Deal_Name">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                            <h5>Santa Ana</h5>
+                                                            <span>Jul 17, 2023</span>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 no-padding">
+                                                            <div class="UI_roundtrip_arrow">
+                                                                <i class="UI_roundtrip_arrow mfsIcon-exchange-new"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                            <h5>Las Vegas</h5>
+                                                            <span>Jul 21, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                                                <div class="UI_dealprice">
+                                                    <label>
+                                                        $81<sup>.75</sup>
+                                                    </label>
+                                                    <button type="button" class="FlightDealClick">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="https://www.letsbooktheflights.com/DealSearch?trip=2&amp;adt=1&amp;chd=0&amp;sen=0&amp;inf=0&amp;infl=0&amp;class=EconomyCoach&amp;from=MIA&amp;to=ATL&amp;depart=07/19/2023&amp;return=07/19/2023" class="FlightDealClick">
+                                    <div class="UI_Deal">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                                                <div class="airline-logo">
+                                                    <img alt="airline-logo" class=" lazyloaded" data-src="/travelresources/Images/AirlineLogo/NK.gif" src="./images/NK.gif">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
+                                                <div class="UI_Deal_Name">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                            <h5>Miami</h5>
+                                                            <span>Jul 19, 2023</span>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 no-padding">
+                                                            <div class="UI_roundtrip_arrow">
+                                                                <i class="UI_roundtrip_arrow mfsIcon-exchange-new"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                            <h5>Atlanta</h5>
+                                                            <span>Jul 19, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                                                <div class="UI_dealprice">
+                                                    <label>
+                                                        $83<sup>.59</sup>
+                                                    </label>
+                                                    <button type="button" class="FlightDealClick">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="https://www.letsbooktheflights.com/DealSearch?trip=2&amp;adt=1&amp;chd=0&amp;sen=0&amp;inf=0&amp;infl=0&amp;class=EconomyCoach&amp;from=PHL&amp;to=CUN&amp;depart=07/18/2023&amp;return=07/19/2023" class="FlightDealClick">
+                                    <div class="UI_Deal">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                                                <div class="airline-logo">
+                                                    <img alt="airline-logo" class=" lazyloaded" data-src="/travelresources/Images/AirlineLogo/NK.gif" src="./images/NK.gif">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
+                                                <div class="UI_Deal_Name">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                            <h5>Philadelphia</h5>
+                                                            <span>Jul 18, 2023</span>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 no-padding">
+                                                            <div class="UI_roundtrip_arrow">
+                                                                <i class="UI_roundtrip_arrow mfsIcon-exchange-new"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                            <h5>Cancun</h5>
+                                                            <span>Jul 19, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                                                <div class="UI_dealprice">
+                                                    <label>
+                                                        $198<sup>.03</sup>
+                                                    </label>
+                                                    <button type="button" class="FlightDealClick">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <a href="https://www.letsbooktheflights.com/DealSearch?trip=2&amp;adt=1&amp;chd=0&amp;sen=0&amp;inf=0&amp;infl=0&amp;class=EconomyCoach&amp;from=IAH&amp;to=CUN&amp;depart=07/18/2023&amp;return=07/22/2023" class="FlightDealClick">
+                                    <div class="UI_Deal">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                                                <div class="airline-logo">
+                                                    <img alt="airline-logo" class=" lazyloaded" data-src="/travelresources/Images/AirlineLogo/NK.gif" src="./images/NK.gif">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
+                                                <div class="UI_Deal_Name">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                            <h5>Houston</h5>
+                                                            <span>Jul 18, 2023</span>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 no-padding">
+                                                            <div class="UI_roundtrip_arrow">
+                                                                <i class="UI_roundtrip_arrow mfsIcon-exchange-new"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                                                            <h5>Cancun</h5>
+                                                            <span>Jul 22, 2023</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                                                <div class="UI_dealprice">
+                                                    <label>
+                                                        $215<sup>.10</sup>
+                                                    </label>
+                                                    <button type="button" class="FlightDealClick">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="container-fluid visible-xs clearfix">
+            <article class="subscribe_mfsmail">
+                <link href="~/css/commonsubsciption.css" rel="stylesheet" />
+
+                <div class="exclusive-deals text-center">
+                    <h3 class="first-heading">Sign Up Now Instant Savings!</h3>
+                    <div class="success-hide">
+                        <p>Our latest deals - delivered right to your inbox. </p>
+                        <p>Sign up now to get an Instant Promo Code for <span class="color_blue"> $20 OFF </span>your next booking!</p>
+                        <div class="deals-sub">
+                            <div class="deals-sub-in">
+                                <input type="text" id="txtsubemail" value="" class="clsTxtsubemail deals-sub-box " placeholder="Enter email address">
+                                <input type="button" value="Subscribe" id="subscribeBtn" onclick="return SendNewsLetterEmailSubscribe(&#39;1&#39;, &#39;Home&#39;)" class="btn btn-cst btn-succees EmailSignup submit-btn-Icon listing-Icon">
+                                <div class="clearfix"></div>
+
+                                <span id="subcribemsgforsessionout" class="alert-danger"></span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="welcomepromo" class="show-when-success hide">
+                        <h3>Sign Up Now Instant Savings!</h3>
+                        <p><strong>Thank You for Signing Up!</strong></p><p>Here is your Instant Promo Code for <strong> $20 OFF</strong> your next booking! </p>
+
+                        <span class="welcome-promo" id="subscribeBtn1">OnTimeSaver</span>
+                    </div>
+                </div>
+                <div class="clr"></div>
+
+
+
+            </article>
+        </section>
+
+        <section class="exclusive-hotel-deal clearfix">
+
+            <div class="container">
+                <h2>Exclusive Hotel <span>Deals </span></h2>
+                <div class="grid-wrap">
+
+                    <div class="hotel-grid ">
+                        <figure> <img class=" lazyloaded" data-src="/travelresources/Images/New_Home/images/htl_deals/Generic-Hotel-4.jpg" width="140" height="130" alt="Quality Inn" src="./images/Generic-Hotel-4.jpg"> </figure>
+                        <div class="right-side-deal" id="htlDeal_4">
+                            <article>
+                                <h3>Quality Inn</h3>
+                                <h4>Orlando Intl Arpt (MCO) Orlando ,United States </h4>
+                                <span class="clsCityCode hidden-xs visible-xs">Orlando Intl Arpt (MCO), Orlando, United States</span>
+                                <h6 class="clsCityName hidden-xs visible-xs">Orlando</h6>
+                                <div class="htlDeals-itinerary">
+                                    <span class="htl__checkInDate">15-Jul-2023</span> <span class="htl__checkOutDate">18-Jul-2023</span> <span class="htl__numberofTraveler">1 Room 2 Guests</span>
+                                </div>
+                            </article>
+                            <div class="star-rating"> <span class="mfsIcon-star"></span><span class="mfsIcon-star"></span><span class="mfsIcon-star-half-o"></span></div>
+                            <div class="mfs_cta-info"> <span class="price">$49<sup>.68<label>*</label></sup></span> <a class="book-now-btn HtlDealClick" onclick="GoForDeal(&#39;htlDeal_4&#39;,&#39;700025891&#39;,&#39;Priceline&#39;)">Book Now</a></div>
+                        </div>
+                    </div>
+
+                    <div class="hotel-grid ">
+                        <figure> <img class=" lazyloaded" data-src="/travelresources/Images/New_Home/images/htl_deals/Generic-Hotel-3.jpg" width="140" height="130" alt="Quality Inn &amp; Suites Detroit Metro Airport" src="./images/Generic-Hotel-3.jpg"> </figure>
+                        <div class="right-side-deal" id="htlDeal_3">
+                            <article>
+                                <h3>Quality Inn &amp; Suites Detroit Metro Airport</h3>
+                                <h4>Detroit Metropolitan Wayne County Arpt (DTW) Detroit ,United States </h4>
+                                <span class="clsCityCode hidden-xs visible-xs">Detroit Metropolitan Wayne County Arpt (DTW), Detroit, United States</span>
+                                <h6 class="clsCityName hidden-xs visible-xs">Detroit</h6>
+                                <div class="htlDeals-itinerary">
+                                    <span class="htl__checkInDate">15-Jul-2023</span> <span class="htl__checkOutDate">18-Jul-2023</span> <span class="htl__numberofTraveler">1 Room 2 Guests</span>
+                                </div>
+                            </article>
+                            <div class="star-rating"> <span class="mfsIcon-star"></span><span class="mfsIcon-star"></span><span class="mfsIcon-star-half-o"></span></div>
+                            <div class="mfs_cta-info"> <span class="price">$54<sup>.45<label>*</label></sup></span> <a class="book-now-btn HtlDealClick" onclick="GoForDeal(&#39;htlDeal_3&#39;,&#39;700245311&#39;,&#39;Priceline&#39;)">Book Now</a></div>
+                        </div>
+                    </div>
+                    <div class="hotel-grid ">
+                        <figure> <img class=" lazyloaded" data-src="/travelresources/Images/New_Home/images/htl_deals/Generic-Hotel-2.jpg" width="140" height="130" alt="Days Inn By Wyndham Carlisle North" src="./images/Generic-Hotel-2.jpg"> </figure>
+                        <div class="right-side-deal" id="htlDeal_2">
+                            <article>
+                                <h3>Econo Lodge</h3>
+                                <h4>Fayetteville Rgnl Grannis Field Arpt(FAY), Fayetteville, United States </h4>
+                                <span class="clsCityCode hidden-xs visible-xs">Fayetteville Rgnl Grannis Field Arpt(FAY), Fayetteville, North Carolina, United States </span>
+                                <h6 class="clsCityName hidden-xs visible-xs">Fayetteville</h6>
+                                <div class="htlDeals-itinerary">
+                                    <span class="htl__checkInDate">15-Jul-2023</span> <span class="htl__checkOutDate">18-Jul-2023</span> <span class="htl__numberofTraveler">1 Room 2 Guests</span>
+                                </div>
+                            </article>
+                            <div class="star-rating"> <span class="mfsIcon-star"></span><span class="mfsIcon-star"></span><span class="mfsIcon-star"></span></div>
+                            <div class="mfs_cta-info"> <span class="price">$58<sup>.87<label>*</label></sup></span> <a class="book-now-btn HtlDealClick" onclick="GoForDeal(&#39;htlDeal_2&#39;,&#39;700157363&#39;,&#39;Priceline&#39;)">Book Now</a></div>
+                        </div>
+                    </div>
+                    <div class="hotel-grid heading-tab-only hidden-mob">
+                        <figure> <img class="lazyload" data-src="/travelresources/Images/New_Home/images/htl_deals/Generic-Hotel-1.jpg" width="140" height="130" alt="Microtel Inn &amp; Suites By Wyndham Raleigh" src="./images/Generic-Hotel-1.jpg"> </figure>
+                        <div class="right-side-deal" id="htlDeal_1">
+                            <article>
+                                <h3>Quality Inn &amp;  &amp; Suites</h3>
+                                <h4>Oakland Intl Arpt, (OAK), Oakland, California, United States </h4>
+                                <span class="clsCityCode hidden-xs visible-xs">Oakland Intl Arpt, (OAK), Oakland, California, United States</span>
+                                <h6 class="clsCityName hidden-xs visible-xs">Oakland</h6>
+                                <div class="htlDeals-itinerary">
+                                    <span class="htl__checkInDate">15-Jul-2023</span> <span class="htl__checkOutDate">18-Jul-2023</span> <span class="htl__numberofTraveler">1 Room 2 Guests</span>
+                                </div>
+                            </article>
+                            <div class="star-rating"> <span class="mfsIcon-star"></span><span class="mfsIcon-star"></span><span class="mfsIcon-star-half-o"></span></div>
+                            <div class="mfs_cta-info"> <span class="price">$63<sup>.16<label>*</label></sup></span> <a class="book-now-btn HtlDealClick" onclick="GoForDeal(&#39;htlDeal_1&#39;,&#39;700207334&#39;,&#39;Priceline&#39;)">Book Now</a></div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+        <section class="exclusive-car-deal clearfix">
+            <div class="container">
+                <h2>Exclusive Car <span>Deals </span></h2>
+
+                <div class="tab-content">
+                    <div class="car-grid tab-pane active" role="tabpanel" id="BestOffers">
+                        <div class="mobile-car-grid">
+
+                            <div class="my-car">
+                                <figure>
+                                    <img class="car-deal lazyloaded" data-src="/travelresources/Images/New_Home/images/kar_deals/Generic.jpg" width="203" height="124" alt="Cheap Car Rental in Cancun" src="./images/Generic.jpg">
+                                </figure>
+                                <div class="tab-content">
+                                    <ul class="listing-in">
+                                        <li class="passenger-item"><span class="mfsIcon-man-standing"></span>5</li>
+                                        <li class="lagauage-item"><span class="mfsIcon-briefcase"></span>1</li>
+                                        <li class="car-item"><span class="mfsIcon-car-door"></span>4</li>
+                                    </ul>
+                                    <div class="rateperday">$9.49 <span>/day<sup>*</sup></span></div>
+                                    <div class="clsDealDetails hidden-xs visible-xs">
+                                        <span class="clsDestination">CUN - Cancun International Airport, Cancun, Mexico</span>
+                                        <div class="car_deal-itinerary">
+                                            <div class="deal_pickUpDate">07/15/2023</div>
+                                            <div class="deal_dropDate">07/17/2023</div>
+                                            <div class="deal_pickUpTime">10:00</div>
+                                            <div class="deal_dropTime">22:00</div>
+                                        </div>
+                                    </div>
+                                    <a onclick="GoForCarDeal(this)" class="pull-right book-now-btn">Book Now</a>
+                                </div>
+                                <span class="carDestination">Cancun</span>
+                                <span class="day-offer-in">$9<sup>.49</sup> <span>Per day</span></span>
+
+                                <h4>Renault Kwid or similar</h4>
+                                <div class="on-hover ">
+                                    <span class="car-class">Economy</span>
+                                    <span class="day-offer">$9.49/Day*</span>
+                                    <ul class="listing-in">
+                                        <li class="passenger-item"><span class="mfsIcon-man-standing"></span>5</li>
+                                        <li class="lagauage-item"><span class="mfsIcon-briefcase"></span>1</li>
+                                        <li class="car-item"><span class="mfsIcon-car-door"></span>4</li>
+                                    </ul>
+                                    <div class="clsDealDetails hidden-xs visible-xs">
+                                        <span class="clsDestination">CUN - Cancun International Airport, Cancun, Mexico</span>
+                                        <div class="car_deal-itinerary">
+                                            <div class="deal_pickUpDate">07/15/2023</div>
+                                            <div class="deal_dropDate">07/17/2023</div>
+                                            <div class="deal_pickUpTime">10:00</div>
+                                            <div class="deal_dropTime">22:00</div>
+                                        </div>
+                                    </div>
+                                    <a onclick="GoForCarDeal(this)" class="book-now-btn">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="my-car">
+                                <figure>
+                                    <img class="car-deal lazyloaded" data-src="/travelresources/Images/New_Home/images/kar_deals/chevrolate-beat.jpg" width="203" height="124" alt="Cheap Car Rental in Mexico City" src="./images/chevrolate-beat.jpg">
+                                </figure>
+                                <div class="tab-content">
+                                    <ul class="listing-in">
+                                        <li class="passenger-item"><span class="mfsIcon-man-standing"></span>5</li>
+                                        <li class="lagauage-item"><span class="mfsIcon-briefcase"></span>1</li>
+                                        <li class="car-item"><span class="mfsIcon-car-door"></span>4</li>
+                                    </ul>
+                                    <div class="rateperday">$14.42 <span>/day<sup>*</sup></span></div>
+                                    <div class="clsDealDetails hidden-xs visible-xs">
+                                        <span class="clsDestination">MEX - Mexico City All Airports, Mexico City, Mexico</span>
+                                        <div class="car_deal-itinerary">
+                                            <div class="deal_pickUpDate">07/15/2023</div>
+                                            <div class="deal_dropDate">07/17/2023</div>
+                                            <div class="deal_pickUpTime">10:00</div>
+                                            <div class="deal_dropTime">22:00</div>
+                                        </div>
+                                    </div>
+                                    <a onclick="GoForCarDeal(this)" class="pull-right book-now-btn">Book Now</a>
+                                </div>
+                                <span class="carDestination">Mexico City</span>
+                                <span class="day-offer-in">$14<sup>.42</sup> <span>Per day</span></span>
+
+                                <h4>Chevrolet Beat Hatchback or similar</h4>
+                                <div class="on-hover ">
+                                    <span class="car-class">Mini</span>
+                                    <span class="day-offer">$14.42/Day*</span>
+                                    <ul class="listing-in">
+                                        <li class="passenger-item"><span class="mfsIcon-man-standing"></span>5</li>
+                                        <li class="lagauage-item"><span class="mfsIcon-briefcase"></span>1</li>
+                                        <li class="car-item"><span class="mfsIcon-car-door"></span>4</li>
+                                    </ul>
+                                    <div class="clsDealDetails hidden-xs visible-xs">
+                                        <span class="clsDestination">MEX - Mexico City All Airports, Mexico City, Mexico</span>
+                                        <div class="car_deal-itinerary">
+                                            <div class="deal_pickUpDate">07/15/2023</div>
+                                            <div class="deal_dropDate">07/17/2023</div>
+                                            <div class="deal_pickUpTime">10:00</div>
+                                            <div class="deal_dropTime">22:00</div>
+                                        </div>
+                                    </div>
+                                    <a onclick="GoForCarDeal(this)" class="book-now-btn">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="my-car">
+                                <figure>
+                                    <img class="car-deal lazyloaded" data-src="/travelresources/Images/New_Home/images/kar_deals/Generic.jpg" width="203" height="124" alt="Cheap Car Rental in Managua" src="./images/Generic.jpg">
+                                </figure>
+                                <div class="tab-content">
+                                    <ul class="listing-in">
+                                        <li class="passenger-item"><span class="mfsIcon-man-standing"></span>4</li>
+                                        <li class="lagauage-item"><span class="mfsIcon-briefcase"></span>2</li>
+                                        <li class="car-item"><span class="mfsIcon-car-door"></span>0</li>
+                                    </ul>
+                                    <div class="rateperday">$16.36 <span>/day<sup>*</sup></span></div>
+                                    <div class="clsDealDetails hidden-xs visible-xs">
+                                        <span class="clsDestination">MGA - Augusto C Sandino Intl, Managua, Nicaragua</span>
+                                        <div class="car_deal-itinerary">
+                                            <div class="deal_pickUpDate">07/15/2023</div>
+                                            <div class="deal_dropDate">07/17/2023</div>
+                                            <div class="deal_pickUpTime">10:00</div>
+                                            <div class="deal_dropTime">22:00</div>
+                                        </div>
+                                    </div>
+                                    <a onclick="GoForCarDeal(this)" class="pull-right book-now-btn">Book Now</a>
+                                </div>
+                                <span class="carDestination">Managua</span>
+                                <span class="day-offer-in">$16<sup>.36</sup> <span>Per day</span></span>
+
+                                <h4>Toyota Agya or similar </h4>
+                                <div class="on-hover ">
+                                    <span class="car-class">Mini</span>
+                                    <span class="day-offer">$16.36/Day*</span>
+                                    <ul class="listing-in">
+                                        <li class="passenger-item"><span class="mfsIcon-man-standing"></span>4</li>
+                                        <li class="lagauage-item"><span class="mfsIcon-briefcase"></span>2</li>
+                                        <li class="car-item"><span class="mfsIcon-car-door"></span>0</li>
+                                    </ul>
+                                    <div class="clsDealDetails hidden-xs visible-xs">
+                                        <span class="clsDestination">MGA - Augusto C Sandino Intl, Managua, Nicaragua</span>
+                                        <div class="car_deal-itinerary">
+                                            <div class="deal_pickUpDate">07/15/2023</div>
+                                            <div class="deal_dropDate">07/17/2023</div>
+                                            <div class="deal_pickUpTime">10:00</div>
+                                            <div class="deal_dropTime">22:00</div>
+                                        </div>
+                                    </div>
+                                    <a onclick="GoForCarDeal(this)" class="book-now-btn">Book Now</a>
+                                </div>
+                            </div>
+
+
+                            <div class="my-car">
+                                <figure>
+                                    <img class="car-deal lazyloaded" data-src="/travelresources/Images/New_Home/images/kar_deals/Fiat-500.jpg" width="203" height="124" alt="Cheap Car Rental in Jacksonville" src="./images/Fiat-500.jpg">
+                                </figure>
+                                <div class="tab-content">
+                                    <ul class="listing-in">
+                                        <li class="passenger-item"><span class="mfsIcon-man-standing"></span>4</li>
+                                        <li class="lagauage-item"><span class="mfsIcon-briefcase"></span>2</li>
+                                        <li class="car-item"><span class="mfsIcon-car-door"></span>3</li>
+                                    </ul>
+                                    <div class="rateperday">$31.79 <span>/day<sup>*</sup></span></div>
+                                    <div class="clsDealDetails hidden-xs visible-xs">
+                                        <span class="clsDestination">JAX - Jacksonville Intl Arpt, Jacksonville, Florida, United States</span>
+                                        <div class="car_deal-itinerary">
+                                            <div class="deal_pickUpDate">07/15/2023</div>
+                                            <div class="deal_dropDate">07/17/2023</div>
+                                            <div class="deal_pickUpTime">10:00</div>
+                                            <div class="deal_dropTime">22:00</div>
+                                        </div>
+                                    </div>
+                                    <a onclick="GoForCarDeal(this)" class="pull-right book-now-btn">Book Now</a>
+                                </div>
+                                <span class="carDestination">Jacksonville</span>
+                                <span class="day-offer-in">$31<sup>.79</sup> <span>Per day</span></span>
+
+                                <h4>Fiat 500 or similar</h4>
+                                <div class="on-hover ">
+                                    <span class="car-class">Mini</span>
+                                    <span class="day-offer">$31.79/Day*</span>
+                                    <ul class="listing-in">
+                                        <li class="passenger-item"><span class="mfsIcon-man-standing"></span>4</li>
+                                        <li class="lagauage-item"><span class="mfsIcon-briefcase"></span>2</li>
+                                        <li class="car-item"><span class="mfsIcon-car-door"></span>3</li>
+                                    </ul>
+                                    <div class="clsDealDetails hidden-xs visible-xs">
+                                        <span class="clsDestination">JAX - Jacksonville Intl Arpt, Jacksonville, Florida, United States</span>
+                                        <div class="car_deal-itinerary">
+                                            <div class="deal_pickUpDate">07/15/2023</div>
+                                            <div class="deal_dropDate">07/17/2023</div>
+                                            <div class="deal_pickUpTime">10:00</div>
+                                            <div class="deal_dropTime">22:00</div>
+                                        </div>
+                                    </div>
+                                    <a onclick="GoForCarDeal(this)" class="book-now-btn">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="my-car">
+                                <figure>
+                                    <img class="car-deal lazyloaded" data-src="/travelresources/Images/New_Home/images/kar_deals/Generic.jpg" width="203" height="124" alt="Cheap Car Rental in San Antonio" src="./images/Generic.jpg">
+                                </figure>
+                                <div class="tab-content">
+                                    <ul class="listing-in">
+                                        <li class="passenger-item"><span class="mfsIcon-man-standing"></span>5</li>
+                                        <li class="lagauage-item"><span class="mfsIcon-briefcase"></span>3</li>
+                                        <li class="car-item"><span class="mfsIcon-car-door"></span>4</li>
+                                    </ul>
+                                    <div class="rateperday">$33.52 <span>/day<sup>*</sup></span></div>
+                                    <div class="clsDealDetails hidden-xs visible-xs">
+                                        <span class="clsDestination">SAT - San Antonio Intl, San Antonio, Texas, United States</span>
+                                        <div class="car_deal-itinerary">
+                                            <div class="deal_pickUpDate">07/15/2023</div>
+                                            <div class="deal_dropDate">07/17/2023</div>
+                                            <div class="deal_pickUpTime">10:00</div>
+                                            <div class="deal_dropTime">22:00</div>
+                                        </div>
+                                    </div>
+                                    <a onclick="GoForCarDeal(this)" class="pull-right book-now-btn">Book Now</a>
+                                </div>
+                                <span class="carDestination">San Antonio</span>
+                                <span class="day-offer-in">$33<sup>.52</sup> <span>Per day</span></span>
+
+                                <h4>Ford Ecosport or similar</h4>
+                                <div class="on-hover ">
+                                    <span class="car-class">Compact</span>
+                                    <span class="day-offer">$33.52/Day*</span>
+                                    <ul class="listing-in">
+                                        <li class="passenger-item"><span class="mfsIcon-man-standing"></span>5</li>
+                                        <li class="lagauage-item"><span class="mfsIcon-briefcase"></span>3</li>
+                                        <li class="car-item"><span class="mfsIcon-car-door"></span>4</li>
+                                    </ul>
+                                    <div class="clsDealDetails hidden-xs visible-xs">
+                                        <span class="clsDestination">SAT  - San Antonio Intl, San Antonio, Texas, United States</span>
+                                        <div class="car_deal-itinerary">
+                                            <div class="deal_pickUpDate">07/15/2023</div>
+                                            <div class="deal_dropDate">07/17/2023</div>
+                                            <div class="deal_pickUpTime">10:00</div>
+                                            <div class="deal_dropTime">22:00</div>
+                                        </div>
+                                    </div>
+                                    <a onclick="GoForCarDeal(this)" class="book-now-btn">Book Now</a>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="affordable-bookingfterContainer clearfix">
+
+            <div class="container">
+                <div class="content-area">
+                    <h2><span>Affordable</span> Prices &amp; <span> Effortless </span> Booking Experience</h2>
+                    <p>letsbooktheflights is an all-in-one travel booking service provider for destinations across the globe. From the best accommodation deals to secure flight reservations, letsbooktheflights promises to extend immaculate service to its customers. The range of <a href="https://www.letsbooktheflights.com/quick-links/cheap-flights-tickets.aspx" title="cheap flights" style="text-decoration:underline">cheap flights</a> and airline tickets offered on our website covers domestic as well as international destinations. Also, you will find amazing discounts on last-minute flights, one-way flights and round-trip flights as well as cheap international flights. </p>
+                    <p>Our teams of travel experts dedicatedly work round the clock with our partners to fetch the lowest travel deals available online to destinations across the globe. We have also partnered with many local as well as international and independent hotel chains across the globe. Whether you are looking for a business hotel, an all-inclusive resort, a cozy B&amp; B or a budget motel, you can always book with us, knowing that you will get the lowest hotel deals. Apart from our cheap flights and hotel rooms, we have a dedicated section for car rentals, where we list the best car rentals deals for destinations across the globe.</p>
+                    <p>letsbooktheflights is driven by the objective to make flight and hotel booking experience of our customers effortless. Our vision is to provide a Seamless user experience by taking ownership of all our client’s needs and architecting the perfect tailored travel technology. We enforce a strong customer value proposition by blending our courteous, friendly and cultured representatives with cutting edge technology. Also, the immense selection of deals for flights, airline tickets and hotels for destinations far and wide curtails your travel expenses significantly. So, book with letsbooktheflights and Save Big!</p>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="faeDetails-content" class="fare-text clearfix">
+            <div class="container">
+                <p>* Fares are round trip, Fares incl. all fuel surcharges, our service fees and taxes. Book 21 days in advance. Displayed fares are based on historical data, are subject to change and cannot be guaranteed at the time of booking. </p>
+                <p>** Discount is valid for all International Travel. Book by  July 31, 2023. Apply the Promo Code at time of check out. Please be advised that the advertised promo code provides a discount against our service fee on stated routes. Promo Code expires on date indicated and can be withdrawn at anytime without notice</p>
+            </div>
+        </section>
+    </div>
+</main>

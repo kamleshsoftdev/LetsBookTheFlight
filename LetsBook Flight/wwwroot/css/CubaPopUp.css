@@ -1,0 +1,50 @@
+﻿#africaPopUp .close{position:absolute;z-index:5;opacity:1!important;right:-11px;top:-13px;width:30px;height:28px;background: url(/travelresources/Images/Listing_Desktop_Mobile/popupCombine.png) no-repeat !important; background-position: -64px -154px !important;}
+#africaPopUp .modal-dialog{width:467px;align-self:center;-moz-align-self:center;-ms-align-self:center;-o-align-self:center;-webkit-align-self:center;position:relative;top:50%;transform:translateY(-50%);-moz-transform:translateY(-50%);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%)}
+.booking-online-box{width:100%}
+#africaPopUp .close:hover{opacity:1!important;filter:alpha(opacity=100)!important}
+#africaPopUp .modal-content{box-shadow:none;border:none}
+#africaPopUp .modal-body{padding:0}
+.booking-online-box .popup{width:100%;float:left;background:#fff;padding:20px;text-align:center;border:1px solid #ccc}
+.booking-online-box .popup article{text-transform:center}
+.booking-online-box .popup article h2,.booking-online-box .popup article p{margin:0;padding:0;font-size:19px;line-height:25px;font-weight:700}
+.booking-online-box .popup article p strong{line-height:37px;color:#005c87;font-weight:700}
+.booking-online-box .popup a.call-number-africa{background:#537600 url(/travelresources/Images/callcenter/africa-strip.png) repeat-x;padding:5px;color:#fff;font-size:29px;margin-top:5px;display:inline-block;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;text-decoration:none;padding:5px 18px}
+@media only screen and (max-width:481px) {
+#africaPopUp .modal-dialog{width:94%;transform:translateY(-110%);-moz-transform:translateY(-110%);-webkit-transform:translateY(-110%);margin:0 3%}
+.booking-online-box .popup{padding:10px}
+.booking-online-box .popup article{text-transform:center}
+.booking-online-box .popup article h2,.booking-online-box .popup article p{font-size:12px;line-height:14px;font-weight:700;color:#333}
+.booking-online-box .popup article p strong{color:#005c87;line-height:18px;font-weight:700}
+.booking-online-box .popup article a.call-number-africa{font-size:18px}
+}
+#CubaPopUpHotel .CubaPopUp-dialog{width:355px!important}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .modal-body ul.headingTxt{font-size:21px;padding:0;width:100%;font-family:Arial,Helvetica,sans-serif!important;color:#000;display:table;list-style-type:none}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .modal-body ul.headingTxt li{display:table-cell;font-weight:700;vertical-align:middle}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .modal-body ul.headingTxt li:last-child{display:inline-block;width:132px;height:76px;background-position:0 0;float:right}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .modal-body ul.headingTxt li.popupCombine{background-position:0 0}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .modal-body p{margin-top:10px;font-size:14px;line-height:24px;color:#000;font-weight:400;font-family:Arial,Helvetica,sans-serif!important}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .modal-body{padding:15px!important}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .modal-body a.cubaTelBtn{padding:5px 0;margin-top:30px;font-weight:700;color:#fff;text-align:center;display:block;width:100%;background:rgba(252,105,0,1);background:-moz-linear-gradient(top,rgba(252,105,0,1) 0%,rgba(169,65,0,1) 100%);background:-webkit-gradient(left top,left bottom,color-stop(0%,rgba(252,105,0,1)),color-stop(100%,rgba(169,65,0,1)));background:-webkit-linear-gradient(top,rgba(252,105,0,1) 0%,rgba(169,65,0,1) 100%);background:-o-linear-gradient(top,rgba(252,105,0,1) 0%,rgba(169,65,0,1) 100%);background:-ms-linear-gradient(top,rgba(252,105,0,1) 0%,rgba(169,65,0,1) 100%);background:linear-gradient(to bottom,rgba(252,105,0,1) 0%,rgba(169,65,0,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc6900',endColorstr='#a94100',GradientType=0)}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .modal-body a.cubaTelBtn:hover{text-decoration:none}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .modal-body a.cubaTelBtn span:first-child{font-size:22px}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .modal-body a.cubaTelBtn span{display:block;font-size:24px;font-family:Arial,Helvetica,sans-serif!important}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .close{position:absolute;z-index:5;opacity:1!important;right:-11px;top:-13px;width:30px;height:28px;background:url(/travelresources/Images/Listing_Desktop_Mobile/popupCombine.png) no-repeat!important;background-position:-64px -154px!important}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .close:focus{outline:0}
+#CubaPopUpHotel .modal-dialog{top:55px!important;width:95%;margin:0 auto}
+#CubaPopUpHotel .CubaPopUp-dialog .modal-content .close span.popupCombine{display:inline-block;width:25px;height:24px;background-position:-64px -154px;right:-21px;top:-34px}
+#CubaPopUpCar .CubaPopUp-dialog{width:355px!important}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .modal-body ul.headingTxt{font-size:21px;padding:0;width:100%;font-family:Arial,Helvetica,sans-serif!important;color:#000;display:table;list-style-type:none}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .modal-body ul.headingTxt li{display:table-cell;font-weight:700;vertical-align:middle}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .modal-body ul.headingTxt li:last-child{display:inline-block;width:132px;height:76px;background-position:0 0;float:right}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .modal-body ul.headingTxt li.popupCombine{background-position:0 0}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .modal-body p{margin-top:10px;font-size:14px;line-height:24px;color:#000;font-weight:400;font-family:Arial,Helvetica,sans-serif!important}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .modal-body{padding:15px!important}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .modal-body a.cubaTelBtn{padding:5px 0;margin-top:30px;font-weight:700;color:#fff;text-align:center;display:block;width:100%;background:rgba(252,105,0,1);background:-moz-linear-gradient(top,rgba(252,105,0,1) 0%,rgba(169,65,0,1) 100%);background:-webkit-gradient(left top,left bottom,color-stop(0%,rgba(252,105,0,1)),color-stop(100%,rgba(169,65,0,1)));background:-webkit-linear-gradient(top,rgba(252,105,0,1) 0%,rgba(169,65,0,1) 100%);background:-o-linear-gradient(top,rgba(252,105,0,1) 0%,rgba(169,65,0,1) 100%);background:-ms-linear-gradient(top,rgba(252,105,0,1) 0%,rgba(169,65,0,1) 100%);background:linear-gradient(to bottom,rgba(252,105,0,1) 0%,rgba(169,65,0,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc6900',endColorstr='#a94100',GradientType=0)}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .modal-body a.cubaTelBtn:hover{text-decoration:none}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .modal-body a.cubaTelBtn span:first-child{font-size:22px}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .modal-body a.cubaTelBtn span{display:block;font-size:24px;font-family:Arial,Helvetica,sans-serif!important}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .close{position:absolute;z-index:5;opacity:1!important;right:-11px;top:-13px;width:30px;height:28px;background:url(/travelresources/Images/Listing_Desktop_Mobile/popupCombine.png) no-repeat!important;background-position:-64px -154px!important}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .close:focus{outline:0}
+#CubaPopUpCar .modal-dialog{top:55px!important;width:95%;margin:0 auto}
+#CubaPopUpCar .CubaPopUp-dialog .modal-content .close span.popupCombine{display:inline-block;width:25px;height:24px;background-position:-64px -154px;right:-21px;top:-34px}
+.popupCombine-Icon {background: url(/travelresources/Images/Listing_Desktop_Mobile/popupCombine_Icon.png) no-repeat !important;}

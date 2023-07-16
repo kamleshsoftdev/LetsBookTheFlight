@@ -1,0 +1,356 @@
+/*******
+    * 1. letsbooktheflights v1.0.9 27022020_DC1
+    * 2. NewHome page default for all browsers.
+    * 3. Homepage: http://letsbooktheflights.com
+    ********/
+*{margin:0px;padding:0px;}
+*:focus{outline:none}
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body {-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing: grayscale;background: transparent	;font-family:Arial, Helvetica, sans-serif;}
+img{max-width:100%;}
+.container{max-width:1170px;margin:0 auto; }
+.paddgNone {padding-right:0;padding-left:0;}
+.visibilitynone { visibility:hidden; }
+.position-rel { position:relative; }
+a:hover {text-decoration:none;}
+.form-control { -webkit-box-shadow: none;}
+.form-control:focus { border-color: #66afe9; outline: 0; -webkit-box-shadow: none; box-shadow: none;}
+.hide-umnr {display: none !important;}
+a:focus {outline: 0px; text-decoration: none;}
+.no-padding{padding:0px;}
+.hide-umnr {display:none !important;}
+/*.display-none{display:none;}*/
+
+/*********
+    * HTML5 display definitions
+    * Add the correct display in IE 9-.
+    * 1. Add the correct display in Edge, IE, and Firefox.
+    * 2. Add the correct display in IE.
+    * 3. Add Reset Styles for Global use
+******/
+/**my local css**/
+section,.UI_Flight_Deal,.UI_top_Flight_Deal,.UI_Deal,.UI_Deal_Name,.UI_dealprice,.airline-logo{ float:left; width:100%;}
+.UI_top_Flight_Deal h1{margin: 0px;padding: 0px 0 10px 0;color: #3c4547;font: 300 30px/35px Arial, Helvetica, sans-serif;}
+.airline-logo{ padding:18px 0}
+.UI_top_Flight_Deal span{    font-weight: 700;color: #137fb0;}
+.UI_Deal{border:1px solid #e1e1e1;padding: 5px 10px;margin: 10px 0;}
+.UI_Deal_Name{text-align:left;padding: 16px 0;}
+.UI_Deal_Name h5{color:#181819;font-family:Arial, Helvetica, sans-serif;font-size: 14px;margin: 0;line-height: 20px;font-weight: 500;}
+.UI_Deal_Name span{display:block;color: #333;font-size: 14px;font-weight: 100;line-height: 20px;}
+.UI_roundtrip_arrow{float: left; display: block; text-align: left; padding-top: 7px; width: 100%; color: #000; font-size: 18px;}
+.UI_dealprice{ text-align:center}
+.UI_dealprice label{font-size: 26px;display: block;margin: 0; color:#181819}
+.UI_dealprice button{font-size: 14px;background-color: #177fb0;border: 0;padding: 5px 18px;color: #fff;border-radius: 5px;}
+.UI_dealprice sup{    font-size: 50%;top: -8px;}
+.UI_dealprice a{ display:block;}
+.UI_Flight_Deal a{ text-decoration:none;}
+.UI_Flight_Deal a:hover{ text-decoration:none; color:#181819}
+.UI_Flight_Deal a:focus{ text-decoration:none; color:#181819}
+/**Endmy local css**/
+
+/**********
+    mfcontainer__mainWrap
+    ************/
+.mfs_main-wrapper {float: left;width: 100%; overflow:hidden;}
+.mfcontainer__mainWrap {float: left;width: 100%;}
+
+    .mfcontainer__mainWrap .banner {
+        image-orientation:from-image;
+        background-image: url('../images/banner_flight.jpeg');
+        background-size: cover;
+        min-height: 170px;
+        float: left;
+        width: 100%;
+    }
+.mfs-bannerText-warp{ float:left; width:110%;padding-top: 70px;}
+.mfs-bannerText-warp h2,.mfs-bannerText-warp h1{ color:#177fb0;font-size: 50px;text-align: center;margin: 0; padding-top:22px;}
+.mfs-bannerText-warp h1{font-size:47px;font-weight: 700; padding:0; text-transform:uppercase; }
+
+.banner.christmas-bnr{background: #3a411a url(/travelresources/Images/New_Home/images/banner-christmas.jpg) no-repeat center center;background-size: cover;float: left;width: 100%;}
+.banner-cyber-monday-coming{background: #2a180a url(/travelresources/Images/New_Home/images/banner-cyber-monday-bg.jpg) no-repeat center center;background-size: cover;min-height: 500px;float: left;width: 100%;}
+.banner-cyber-monday{background: #2a180a url(/travelresources/Images/New_Home/images/banner-cyber-monday.jpg) no-repeat center center;background-size: cover;}
+.days12-content{margin: 0 auto;width:310px;padding-top: 15px;padding-bottom: 10px;text-align: center;margin-left:13px;}
+.banner.independence-bnr {background: #3a411a url(/travelresources/Images/New_Home/images/independence-day.jpg?v=v1.1.1) no-repeat center center; background-size: cover; float: left; width: 100%;} 
+#christmas-countdown{ background:#fff;padding-left:14px;}
+
+/****************
+    savePromo_christmas
+    ********/
+.savePromo_christmas{margin: 0 auto; width:75%; border:1px dashed #242424; padding:8px 5px; border-radius:20px; font: 600 20px/25px Arial, Helvetica, sans-serif; background: rgba(255, 255, 255, 0.2); position: relative;}
+.savePromo_christmas span{color:#d10606; font-weight:700; font-size:30px;}
+.intable-text{display: inline-table; text-align: center;vertical-align: super;}
+.savePromo_christmas .promocrd{font-weight:700; font-size:30px;color:#d10606; border: 1px dashed #d10606;padding: 5px 10px;display: inline-block; position:relative;text-transform: uppercase;margin-top: 10px; letter-spacing: 10px;padding-right: 0;}
+.savePromo_christmas .promocrd .kanchi{ position:absolute; top:-17px; left:20px;}
+.savePromo_christmas .profoffer-details{font-size: 11px; position: absolute; right: 16px; bottom: -24px; }
+.savePromo_christmas .profoffer-details a{text-decoration: underline; color: #000;}
+.savePromo_christmas.samlltext{font: 600 16px/16px Arial, Helvetica, sans-serif; }
+.savePromo_christmas .nomargin-tp{ margin-top:0 !important }
+/*End savePromo_christmas*/
+
+/*savePromo_independence-day*/
+.savePromo_independence {font-size: 22px;font-family: Arial, Helvetica, sans-serif; font-weight:bold; color:#fff; width:70%;}
+/*End savePromo_independence-day*/
+/*service-box-area*/
+#mfs_serviceBox.service-box-area { position:relative; z-index:5; }
+.service-box-area{padding:20px;width:100%; float:left; background:#fff;}
+.service-one{float:left;padding:0 30px; background:url(/travelresources/Images/New_Home/images/sep.jpg) no-repeat right center;}
+.service-one.pad-left-zero{padding-left:0px;}
+.service-one h2{font: 600 21px/25px Arial, Helvetica, sans-serif;margin: 0px;padding: 0px;text-transform: uppercase;color:#697274;}
+.service-one h2 span{display:block; font: 300 18px/25px Arial, Helvetica, sans-serif;color:#afb7b9;}
+.like-count{padding: 0 30px;float: left;}
+.like-count h2{margin:0px;}
+.like-count span{ display:block; font: 300 14px/10px Arial, Helvetica, sans-serif;    margin-top: 5px;}
+.service-one.next-service h2{ font: 600 27px/30px Arial, Helvetica, sans-serif;    margin: 0px;    padding: 0px;    text-transform: uppercase;color:#697274;}
+.service-one.next-service h2 span{display:block; font: 300 14px/20px Arial, Helvetica, sans-serif;}
+.service-one.next-next-service h2{font: 600 19px/30px Arial, Helvetica, sans-serif;    margin: 0px;    padding: 0px;    text-transform: uppercase;color:#697274;}
+.service-one.next-next-service h2 img{vertical-align: top;}
+.service-one.next-next-service h2 span{display:block; font: 400 20px/20px Arial, Helvetica, sans-serif;letter-spacing:2px;}
+.sign-up-box{}
+.sign-up-box p{float: left;font: 400 16px/16px Arial, Helvetica, sans-serif;width: 100%;padding:0 0 5px 0;color:#3c4547;margin: 0;}
+.sign-up-box .wrap{width:100%;float:left}
+.sign-up-box .wrap .form-control{padding:10px 15px;float:left;border:1px solid #eaeaea;width:300px;height:auto;}
+.sign-up-box .wrap .submit{background: #137fb0;border: none;padding: 10.5px 15px;color: #fff;text-transform: uppercase;cursor:pointer;}
+
+.sign-up-box .exclusiveFiled{width:100%;float:left;margin-top: 24px;padding-bottom: 24px; position:relative;}
+.sign-up-box .exclusiveFiled .subcribe-filed{height:42px;padding:10px 15px;float:left;width: 80%;border:1px solid #eaeaea;}
+.sign-up-box .exclusiveFiled .submit{background: #177fb0;border: none;padding: 10px 15px;color: #fff;text-transform: uppercase;cursor:pointer; position:absolute; top:1px; right:0; z-index:2; }
+.sign-up-box .exclusiveFiled .subcribe-msg{ position: absolute; z-index:1; left:0; bottom:0; }
+/*********
+   Services NewDesign  implement
+    *********/
+.mfs_whyus, ._signUpWarp{ border:1px solid #e3e3e3; background-color:#f5f5f5; }
+.mfs_whyus h2, ._signUpWarp h2{ font:600 24px/18px Arial, Helvetica, sans-serif; color:#5c5c5c; }
+._signUpWarp{width: 48%; float:right; }
+.whyBook-content{ padding-left:0;padding-right:0; }
+.whyBook-content ul,.whyBook-content ul li{margin:0; padding:0; list-style:none; list-style-type:none;}
+.whyBook-content ul li{ display:inline-block;position:relative; font:300 14px/18px Arial, Helvetica, sans-serif; padding: 5px 30px 15px;}
+.whyBook-content ul li span{ display:block; clear:both;}
+.whyBook-content ul li.nthChild2{margin-left: 15px;padding-right: 48px;}
+.whyBook-content ul li.nthChild3::after{display:none;}
+.whyBook-content ul li:after{content:''; position:absolute; right:0px; width:1px; height:90px; background:#e1e1e1; top:10px; opacity:0.6;}
+
+.whyBook-content ._sprite { font-size: 49px; display: block; margin: 0 auto}
+/*end service-box-area*/
+.deals-in-flight{width:100%;float:left;padding:30px 0}
+.mfs_flightdeals {}
+.deals-in-flight h1{margin:0px;padding:0px 0 10px 0;color:#3c4547;font:300 30px/35px Arial, Helvetica, sans-serif;}
+.deals-in-flight h1 span{font-weight:700;color:#137fb0;}
+.deals-in-flight h1 small{font-size:14px;font-weight: 300;padding-left: 6px;}
+.deals-in-flight p{font:300 13px/22px Arial, Helvetica, sans-serif;}
+.deals-in-flight p a{font:400 13px/22px Arial, Helvetica, sans-serif;color:#137fb0}
+
+/*****
+    trustpilot-warp
+    *******/
+.positionR { position:relative !important }
+.trustpilot-warp { padding-top:15px; position:absolute; right:0; bottom: 0px; width:100%;  }
+.trustpilot-widget.pilot_Widgt { width: 100% !important; }
+.trustpilot_coverv26 {position: absolute;width: 100%;height: 90px;top: 0px;left: 0;}
+ul.trustpilot-group {margin:0; padding:0; list-style:none;}
+ul.trustpilot-group li {margin:0; padding:0; list-style:none; display:inline-block;height: 115px; position:relative; font-family:Helvetica Neue,Arial,Helvetica,sans-serif}
+ul.trustpilot-group li.trustPilot{}
+ul.trustpilot-group li.bbbIcon{padding-left: 47px;}
+ul.trustpilot-group li.fbIcon{padding-left: 30px; padding-top:5px; }
+ul.trustpilot-group li.trustPilot p,
+ul.trustpilot-group li.bbbIcon p,
+ul.trustpilot-group li.fbIcon p{text-align:center; font-size:11px; line-height:16px; color:#fff;padding: 2px 12px;letter-spacing: 0.5px;}
+ul.trustpilot-group li.bbbIcon p{font-size: 11px; padding:0; }
+ul.trustpilot-group li.trustPilot p{ line-height:11px; padding:0;}
+ul.trustpilot-group li.bbbIcon p a{color:#fff;}
+ul.trustpilot-group li:last-child::after,
+ul.trustpilot-group li.fbIcon:after{display:none;}
+ul.trustpilot-group li:after{content:''; position:absolute; right:-18px; width:1px; height:80px; background:#636363; top:0; opacity:0.4;}
+.fbIcon span { background-color: #1877f2; color: #fff; border-radius: 5px ; padding: 5px 10px 5px 25px; cursor:default; line-height:30px; display: inline; background-position:5px 3px;background-repeat: no-repeat;}
+.fbIcon .svg-thumup{width:17px;height:17px;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' fill='%23ffffff' viewBox='0 0 24 24'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:none;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M0,0H24V24H0Z'/%3E%3Cpath d='M1,19.182H4.636V8.273H1Zm20-10a1.824,1.824,0,0,0-1.818-1.818H13.445l.864-4.155.027-.291a1.368,1.368,0,0,0-.4-.964L12.973,1,6.991,6.991a1.778,1.778,0,0,0-.536,1.282v9.091a1.824,1.824,0,0,0,1.818,1.818h8.182a1.806,1.806,0,0,0,1.673-1.109l2.745-6.409A1.8,1.8,0,0,0,21,11Z' transform='translate(1 2)'/%3E%3C/svg%3E");}
+
+#return-to-top { position: fixed; bottom: 20px; right: 20px;background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.7); width: 40px; height: 40px; cursor:pointer; display: block;text-decoration: none; -webkit-border-radius: 35px; -moz-border-radius: 35px; border-radius: 35px; display: none; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;z-index: 50;}
+#return-to-top i { color: #fff; margin: 0; position: relative; left: 11px; top: 10px; font-size: 19px;  -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
+#return-to-top:hover { background: rgba(0, 0, 0, 0.9); }
+#return-to-top:hover i { color: #fff; top: 5px;-webkit-animation: mymove 0.4s infinite; animation: mymove 0.4s infinite;}
+@keyframes mymove { from { top: 0px; } to { top: 8px; }}
+@-webkit-keyframes mymove { from {top: 0px;}to {top: 8px;}} 
+/*.search-set-icon.flight-type-icon{ text-align: center;transition: all .5s ease 0s; }
+.search-set-icon.flight-type-icon:hover {-webkit-transform: rotate(360deg);  transform: rotate(360deg); -ms-transform: rotate(360deg);}
+*/
+
+/*deal-grid*/
+.grid-wrap{ width: 100%; float: left;margin: 20px 0 ;}.grid-wrap img{float:left;} 
+.right-side-deal { float: left; width: 60%;padding:5px 5px 5px 10px;}
+.right-side-deal h3{font: 700 11px/16px Arial, Helvetica, sans-serif;margin:0px;padding-top: 2px;}
+.right-side-deal h4{font: 400 11px/19px Arial, Helvetica, sans-serif;margin:0px;}
+.right-side-deal .price{font-size: 28px; font-weight: bold;}
+.right-side-deal .book-now-btn{ font-size: 14px; font-weight: 300; background: #5c6668; text-decoration: none; color: #fff; padding: 5px 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;float: right; margin-top: 5px; cursor: pointer; }
+.right-side-deal .book-now-btn:hover{ background: #739c0f;}
+.right-side-deal .price sup{font-size:55%;font-weight:900;}
+.star-rating{    width: 100%;float: left;margin: 3px 0; margin-bottom: 5px;color: #ff8a00;}
+.star-rating-trip{width:100%; float:left;margin:3px 0 3px 0;}
+.star-rating-trip .tp-advicer{margin-right:3px;}
+.deal-grid{width:50%; float:left; background:#f5f5f5; overflow: hidden;}
+.space{width:100%; float:left;}
+.deal-grid .info-deal{width:50%; float:left;background:#F5F5F5;padding:25px 25px;text-align:center;}
+.deal-grid .info-deal h2{color:#454f51;font:500 25px/30px Arial, Helvetica, sans-serif;text-transform:uppercase;margin:0px;}
+.deal-grid .info-deal h2 span{font:500 12px/18px Arial, Helvetica, sans-serif;}
+.deal-grid .info-deal .date-info{font-size: 12px;    text-transform: uppercase;line-height: 25px;margin:5px 0}
+.deal-grid .info-deal .date-info span {text-transform: lowercase;}
+.deal-grid .info-deal p{font: 300 12px/18px Arial, Helvetica, sans-serif;color:#838889;}
+.deal-grid .info-deal .f-from{font: 300 12px/18px Arial, Helvetica, sans-serif;color:#5c5c5c;display:block;text-transform:uppercase;margin:6px 0;}
+.deal-grid .info-deal span.price{font-weight: bold; display: block;font-size: 29px;}
+.deal-grid .info-deal span.price sup{font-size: 55%;}
+.deal-grid .info-deal a.book-now {background: #007db6;text-decoration: none;padding: 8px 20px;margin: 5px 0 0 0;display: inline-block;color: #fff;border-radius: 2px;font-weight: 300;-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;}
+.deal-grid .image-deal:after {width: 0px;height: 0px;left: 0px;content: "";position: absolute;border: 10px solid transparent;border-left: 10px solid #f5f5f5;top: 50%;transform: translateY(-50%);}
+.deal-grid.three .image-deal:after, .deal-grid.four .image-deal:after {left:95%; border: 10px solid transparent; border-right: 10px solid #f5f5f5;border-left:none}
+.deal-grid .info-deal a.book-now:hover{background: #739c0f;}
+.deal-grid .image-deal{width:50%; float:left;position:relative;overflow:hidden}
+.deal-grid .image-deal img{height:100%;transition: all .2s ease-in-out; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out;}
+.deal-grid .image-deal img:hover{transform:scale(1.1); -webkit-transition: all .2s ease-in-out;}
+.deal-grid.three .info-deal{float:right}
+.deal-grid.four .info-deal{float:right}
+/*end deal-grid*/
+
+/* exclusive-hotel-deal */
+.htlDeals-itinerary {display:none; }
+.exclusive-hotel-deal{width:100%; float:left;background:#f5f5f5;padding: 25px 0;}
+.exclusive-hotel-deal h2{margin:0px;padding:0px 0 10px 0;color:#3c4547;font:300 30px/35px Arial, Helvetica, sans-serif;}
+.exclusive-hotel-deal h2 span{font-weight:700;color:#137fb0;}
+.hotel-grid{width:31.333%;float:left;border:1px solid #dedede;margin:0 1%;background: #fff;position: relative;}
+.hotel-grid:first-child{margin-left:0px;}
+.hotel-grid:last-child{margin-right:0px;}
+.hotel-grid .mfs_cta-info {clear: both;position: absolute;bottom: 3px;width: 55%;}
+/* End exclusive-hotel-deal*/ 
+
+/* car deals*/
+ .car_deal-itinerary {display:none; }
+.exclusive-car-deal{width:100%; float:left;padding: 30px 0; padding-bottom:10px;}
+.exclusive-car-deal h2{ margin: 0px; padding: 0px 0 30px 0; color: #3c4547; font: 300 30px/35px Arial, Helvetica, sans-serif; float: left; width: 100%;}
+.exclusive-car-deal h2 span{font-weight:700;color:#137fb0;}
+.car-grid{width:100%;float:left; margin-bottom: 25px;}
+.car-grid .my-car img{width:100%;}
+.car-grid .my-car h4{font: 400 14px/25px Arial, Helvetica, sans-serif;display: block;float: left;width: 100%;padding-bottom: 5px;color:#2f2f2f;}
+.my-car{ width: 18%;float: left;margin: 0 1%;border:1px solid #e7e7e7;text-align: center;overflow:hidden;position:relative;}
+.my-car .on-hover{width: 100%;float: left; text-align: center; position: absolute; left: 0;bottom: -100%; height: 100%; background: #f5f5f5;transition: all .2s ease-in-out; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out;}
+.my-car:hover .on-hover{bottom:0;}
+.my-car .on-hover.active{bottom:0;}
+.my-car:first-child {margin-left: 0px;}
+.my-car ul.listing-in{margin:5px 0}
+.my-car ul.listing-in li {display: inline-block;position: relative;color: #333}
+.my-car ul.listing-in li.passenger-item {padding: 0 10px 0 17px}
+.my-car ul.listing-in li span {font-size: 18px; position: absolute; left: 0; color: #7d8283}
+.my-car ul.listing-in li.lagauage-item {padding: 0 10px 0 24px}
+.my-car ul.listing-in li.car-item {padding: 0 5px 0 24px;margin: 5px 0}
+.my-car .day-offer-in{ position: absolute;left: -1px;bottom: 56px;color: #f8e122;font-weight: 600;font-size: 25px;background: rgba(0, 0, 0, 0.58);width: 100%;}
+.my-car .day-offer-in sup{color:#f8e122;font-weight:400;font-size:12px;}
+.my-car .day-offer-in span{font-weight:400;font-size:12px;color:#fff;position: relative; top: -7px;}
+.my-car .carDestination{ position: absolute;left: -1px;top: 4px;color: #fff;font-size: 15px;background: rgba(0, 0, 0, 0.58);padding: 2px 10px;border-radius: 0 5px 0 0;;}
+	
+.my-car ul.listing-in li{display: inline-block;}
+.listing-in li {height:24px;}
+.my-car ul.listing-in li.passenger-item{/*padding: 0 5px 0 11px;*/background-position: -8px -1px;}
+.my-car ul.listing-in li.lagauage-item{/*padding: 0 5px 0 21px;*/background-position: -2px -20px;}
+.my-car ul.listing-in li.car-item{/*padding: 0 5px 0 15px;margin: 5px 0;*/background-position: -5px -40px;}
+.my-car .car-class {display: block; color: #3c4547;font-size: 22px; margin: 5px 0;}
+.my-car .day-offer { display: block; color: #ff8a00;font-size:18px;}
+.my-car  a.book-now-btn{ background: #5c6668; text-decoration: none;cursor: pointer; padding: 5px 10px; margin: 5px 0 0 0; display: inline-block;color: #fff;border-radius: 2px; font-weight: 300; font-size: 14px;}
+.my-car  a.book-now-btn:hover{background: #739c0f;}
+ul.tab-link{ margin: 0px 0px 15px 0px;padding: 0px; list-style: none; float: left;}
+ul.tab-link li{float:left;}
+ul.tab-link li a{font:300 16px/30px Arial, Helvetica, sans-serif;padding:0 15px;text-decoration:none;color:#5c5c5c; border-right:1px solid #5c5c5c;}
+ul.tab-link li.active a{color:#0470a1;font-weight:600}
+ul.tab-link li:first-child a{padding-left:0px;}
+ul.tab-link li:last-child a{border:none;}
+.content-area{width:100%;float:left;}
+.content-area p{font:300 14px/26px Arial, Helvetica, sans-serif;margin:25px 0;}
+/*end of car deals*/
+
+/***
+FixedCallnow_Desktop
+**************/
+/*.mdfixed_callwap{ background: rgba(19,127,176,0.9); border-top: 1px solid #c5c5c5;box-shadow: 0 0px 5px #c5c5c5; padding-top:5px; position:fixed; bottom:0; left:0;width:100%; height:102px; z-index:999; display:flex }
+.mdfixed_callwap_deal{ background: rgba(256,256,256,0.9) !important; height:45px !important;}
+.mdfixed_callwap .container h5{font:bold 18px/22px arial,verdana;color:#000; display: inline-block; border-radius: 5px; margin-right:15px;}
+.mdfixed_callwap .container p{background-color:#177fb0; color:#fff; padding:5px 8px;font:bold 25px/22px arial,verdana; display: inline-block; border-radius: 5px;}
+.mdfixed_callwap .container p a{ color:#fff;}
+.mdfixed_callwap .mdClose-btn {position: absolute; z-index: 5; opacity: 1.0 !important; right: 10px; top: 10px; width: 30px; height: 28px; background: url(/travelresources/Images/Listing_Desktop_Mobile/popupCombine.png) no-repeat !important; background-position: -64px -154px !important; border:0 none; }
+.mdfotr40pding{ padding-bottom:40px; }
+.copy-right-pay {padding-bottom: 25px;}*/
+
+/***
+FixedCallnow_Desktop
+**************/
+  .mdfixed_callwap{ background:rgba(256,256,256,0.9); border-top: 1px solid #c5c5c5;box-shadow: 0 0px 5px #c5c5c5; padding-top:5px; position:fixed; bottom:0; left:0;width:100%; height:45px; z-index:999; } 
+  .mdfixed_callwap .container h5{font:bold 18px/22px arial,verdana;color:#000; display: inline-block; border-radius: 5px; margin-right:15px;} 
+  .mdfixed_callwap .container p{background-color:#177fb0; color:#fff; padding:5px 8px;font:bold 25px/22px arial,verdana; display: inline-block; border-radius: 5px;} 
+  .mdfixed_callwap .container p a{ color:#fff;} .copy-right-pay {padding-bottom: 25px;}
+/****
+    Affordable & Easy Flights
+    ********/
+.affordable-bookingfterContainer {width: 100%; float: left; padding: 30px 0;padding-top:0px;}
+.affordable-bookingfterContainer h2 {margin-top: 0px; margin-bottom: 10px;color: #3c4547; font: 300 30px/35px Arial, Helvetica, sans-serif; display:block}
+.affordable-bookingfterContainer h2 span{font-weight:700;color:#137fb0;}
+.affordable-bookingfterContainer .content-area p {margin: 15px 0;color: #666;}
+/*End Affordable & Easy Flights*/
+
+/*Blog*/
+.exclusive-hotel-deal.blog-section{}
+.blog-grid{width:100%; float:left;}
+.blog-grid .item{float: left; border: 1px solid #dedede; margin: 0;position:relative;height:200px; overflow:hidden;width:100%;}
+.blog-grid .item:first-child{margin-left:0px;}
+.blog-grid .item .strip{position: absolute; width: 100%; left: 0; bottom: 0;padding:10px 15px;background: rgba(255, 255, 255, .8); min-height: 78px;}
+.blog-grid .item  img{ height:100%;}
+.blog-grid .item .strip h4{color:#333;margin:0px;padding:0px;font:400 17px/24px Arial, Helvetica, sans-serif;}
+.blog-grid .item .strip h4 a{color:#333; transition: color 0.3s linear; -webkit-transition: color 0.3s linear; -moz-transition: color 0.3s linear;}
+.blog-grid .item .strip h4 a:hover {color:#137fb0; }
+.blog-grid .item .strip p{color:rgb(60,69,71);font:300 12px/16px Arial, Helvetica, sans-serif;}
+.blog-grid .item .blog-post p{ font-size:0px; color:#fff; }
+.blog-grid .item .blog-post p.link-more{ display:none;}
+.fbthumbs { padding-top: 40px; margin-top: -5px; background: url(/travelresources/Images/New_Home/images/thumbs-icon.png) no-repeat top center/50%; }
+/** end of blog*/
+.subcribe-msg p.success-msg {color:#739c0f;}
+.subcribe-success-msg {color:#739c0f;  margin-top: 3px; text-align:center; font-size:13px; margin-bottom:3px;}
+
+/* Medai Query */
+@media screen and (min-width: 769px) {
+    .mfs_bannerArea { position: absolute; left:0; top:0; width:100%;  height: 600px; z-index:0; }
+    .mfs_SearchWidgetWarp {float: left;width: 100%; position:relative;}
+    .mfs_SearchWidgetWarp .desktop-ser{height: inherit;z-index: inherit;}
+    ._wigetArea { z-index: 6;}
+    ._wigetContent {min-height:535px; float:left; width:100%;}
+    .trustpilot-warp { bottom:0;}
+}
+@media screen and (min-width: 319px) and (max-width: 768px) {
+    .banner.mfs_bannerArea { display:none}
+    ._wigetArea {background: url(/travelresources/Images/New_Home/images/mobile-banner.jpg) no-repeat center center; background-size: cover; min-height: 480px; float: left; width: 100%;}
+    #collapseadvance .mfs_fNonstp label.checkBoxlabel { font-size: 10px; line-height: 16px; color:#fff;}
+    .UI_Deal_Name span { font-size: 10px;}
+    .padd-left-5{ padding-left:5px; padding-right:5px;}
+    .UI_dealprice button {font-size: 13px;padding: 5px 10px;}
+    
+    .UI_dealprice label {font-size: 22px;}
+    .UI_Deal_Name {   padding: 2px 0  }    
+.copy-right-pay {padding-bottom: 0px;}
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .UI_dealprice label {  font-size: 22px; }
+    .UI_dealprice button {font-size: 10px;padding: 7px 9px}
+    .UI_Deal_Name {padding: 2px 0}
+    .UI_roundtrip_arrow{ text-align:center}
+}
+@media screen and (min-width: 320px) and (max-width: 320px){
+    .UI_Deal_Name h5{ font-size:11px; line-height:14px;}
+    .UI_Deal_Name span{ font-size:8px}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .mfheader__warp .logo{margin-left: 0px;}
+    .widget-section { margin:0; padding:0; }
+    #collapseadvance .mfs_fNonstp label.checkBoxlabel { font-size: 10px; color:#666;}
+    .mfs_trustpilot_sm {float: left;width: 100%;margin-bottom: 10px;}
+    .UI_dealprice label { font-size: 24px;}
+    .UI_Deal_Name { padding: 2px 0}
+    .UI_Deal_Name span {font-size: 11px;}
+    .UI_roundtrip_arrow{ text-align:center}
+    .UI_dealprice button {font-size: 10px;padding: 7px 14px   }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1199px){
+    .UI_dealprice button{padding: 5px 8px;}
+
+}
