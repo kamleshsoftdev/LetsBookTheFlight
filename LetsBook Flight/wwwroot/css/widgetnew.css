@@ -32,8 +32,8 @@ select.arrow { background: url('/travelresources/Images/New_Home/images/arrow-do
     .search-bar .tab-bar li.active {
         background: #fff;
         padding-top: 5px;
-        width: 162px;
-        height: 55px;
+        width: 135px;
+        height: 45px;
     }
 
         .search-bar .tab-bar li.active a {

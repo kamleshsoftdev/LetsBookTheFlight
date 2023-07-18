@@ -28,42 +28,49 @@ height:40px;
 width:40px;
 }
 .flight_design {
-    background: url(../images/flight_icons.png) no-repeat 50% 50%;
-    background-size: 81px 40px;
+    background: url(../images/flight_icons.png) no-repeat 64% 50%;
+    background-size: 38px 45px;
     display: inline-block;
     height: 23px;
     width: 50px;
     position: absolute;
-    margin-left: -88px;
-    margin-top: 9px;
-    padding-left: 92px;
+    margin-left: -94px;
+    margin-top: -7px;
+    padding-left: 86px;
 }
+
 
 element.style {
 }
 
 p#logo_text {
-    margin-top: 7px;
-    margin-left: 62px;
+    margin-top: -10px;
+    margin-left: 13px;
+    /* font-size: inherit; */
+    font-size: 16px;
 }
 
 .lbtfIcon-flight {
-    background: url(../images/RTFlightIcon.png) no-repeat 60% 60%;
-    background-size: 87px 47px;
+    background: url(../images/RTFlightIcon.png) no-repeat 0% 0%;
+    background-size: 58px 46px;
     display: inline-block;
-    height: 51px;
-    width: 50px;
+    height: 48px;
+    width: 29px;
     position: relative;
-    margin-left: -26px;
-    margin-top: 38px;
+    margin-left: -20px;
+    margin-top: 32px;
     padding-left: 100px;
 }
 
 p#lbf-calender {
-    margin-left: 215px;
-    margin-top: -65px;
+    background: url('../images/calender_icon.png') no-repeat 0% 0%;
+    background-size: 47px 50px;
+    display: inline-block;
+    position: relative;
+    margin-left: 216px;
+    margin-top: -77px;
     font-size: 44px;
-    height: 60px;
+    height: 54px;
     width: 60px;
 }
 .airline_seat_icon {
@@ -102,4 +109,18 @@ span.angle_down {
     margin-left: 0;
     margin-right: 0;
     padding-left: 40px;
+}
+div#hide-round {
+    position: relative;
+    margin-left: 300px;
+    margin-top: -103px;
+}
+.user_icon {
+    background: url(../images/user_icon.png) no-repeat 0% 0%;
+    background-size: 52px 35px;
+    display: inline-block;
+    position: relative;
+    font-size: 49px;
+    height: 38px;
+    width: 60px;
 }
