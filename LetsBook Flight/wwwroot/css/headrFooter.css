@@ -21,20 +21,27 @@
 .menu-box{float:right;width:60%;}
 .mfheader-mainav.menu-box.navbar.navbar-default {
     border: 0 none;
-    margin-right: 160px;
+    position: absolute;
+    margin-left: 50px;
 }
 .mfheader-mainav.menu-box .mfscheck-booking {float: right;margin-right: 18px;margin-top: 2px;}
 .mfheader-mainav.menu-box .mfscheck-booking.hpdivline{ position: relative; }
 .mfheader-mainav.menu-box .mfscheck-booking.hpdivline:after{ content: '|'; position:absolute; top: 0;right: -10px; color:#d6d6d6; }
 .mfheader-mainav.menu-box .mfscheck-booking.blog{position:relative; margin-right:30px;}
 .mfheader-mainav.menu-box .mfscheck-booking.blog:before{content: '|'; position:absolute; top: 0;left: -10px; color:#d6d6d6;}
-.mfheader-mainav.menu-box .mfscheck-booking a {font:400 12px/16px Arial, Helvetica, sans-serif;color:#137fb0; display:inline-block;}
+.mfheader-mainav.menu-box .mfscheck-booking a {
+        font: 417 12px/16px Arial, Helvetica, sans-serif;
+        color: #4c13b0;
+        display: inline-block;
+        margin-left: -4px;
+        padding-right: 5px;
+    }
 .mfheader-mainav.menu-box .login-register{ float: right;margin-right: 14px;margin-top: 3px;}
 .mfheader-mainav.menu-box .login-register ul{margin:0px;padding:0px;list-style:none;}
 .mfheader-mainav.menu-box .login-register ul li{    float: left;}
-.mfheader-mainav.menu-box .login-register ul li a{font:400 12px/16px Arial, Helvetica, sans-serif;color:#137fb0; text-decoration:none; background: url(/travelresources/Images/New_Home/images/login-icon.png) no-repeat left center; padding:0 16px; }
+.mfheader-mainav.menu-box .login-register ul li a{font:400 12px/16px Arial, Helvetica, sans-serif;color:#137fb0; text-decoration:none; background: url(/images/login-icon.jpg) no-repeat left center; padding:0 16px; }
 .mfheader-mainav.menu-box .login-register ul li a:hover{text-decoration:underline;}
-.mfheader-mainav.menu-box .login-register ul li:first-child a{background: url(/travelresources/Images/New_Home/images/register-icon.png) no-repeat left center;padding-left: 15px;}
+.mfheader-mainav.menu-box .login-register ul li:first-child a{background: url(/images/register-icon.png) no-repeat left center;padding-left: 15px;}
 /*****
     mfHeader_nav
     ********/

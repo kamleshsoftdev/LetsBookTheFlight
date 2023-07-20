@@ -245,7 +245,12 @@ a.ui-datepicker-prev span.ui-icon { background: url(/travelresources/Images/newh
 .htl-des .clear-input-htl { top: 29%;  right: 0px; }
 .subcribe-msg  p{ color: #de0400;  font-size:13px;}
 .ui-menu .ui-menu-item.prefer {font-size: 16px; padding: 3px 10px; border-bottom: 1px solid #f1f1f1 !important;}
-#FlightClass{ -webkit-appearance: none; -moz-appearance: none; width: 80%;}
+#FlightClass {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 80%;
+    margin-left: 35px;
+}
 .location_wrapper .mfsIcon-angle-down {position: absolute;right: 0;bottom: -4px;font-size: 30px;z-index: 0}
 #show-passenger.location_wrapper{position: relative;}
 #show-passenger .passengers-text{position: absolute; top: 2px; left: 58px; font-size: 21px;color: #999;font-weight:500;}
