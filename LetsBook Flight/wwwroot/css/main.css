@@ -51,30 +51,39 @@ p#logo_text {
 }
 
 .lbtfIcon-flight {
-    background: url(../images/RTFlightIcon.png) no-repeat 10% 10%;
-    background-size: 40px 40px;
+    /* background: url(../images/RTFlightIcon.png) no-repeat 10% 10%; */
+    /* background-size: 40px 40px; */
     display: inline-block;
-    height: 48px;
-    width: 29px;
+    height: 40px;
+    width: 30px;
     position: relative;
-    margin-left: -17px;
-    margin-top: 45px;
-    padding-left: 100px;
+    margin-left: 0px;
+    margin-top: 35px;
+    font-size: 16px;
+    color: #999;
+}
+.fa-rotate-180 {
+margin-left:10px;
+}
+
+element.style {
 }
 
 p#lbf-calender {
-    background: url('../images/calender_icon.png') no-repeat 0% 0%;
-    background-size: 47px 50px;
-    display: inline-block;
+    /* background: url(../images/calender_icon.png) no-repeat 0% 0%; */
+    /* background-size: 47px 50px; */
+    /* display: inline-block; */
     position: relative;
     margin-left: 216px;
     margin-top: -77px;
     font-size: 44px;
     height: 54px;
     width: 60px;
+    color: #999;
+    background: transparent;
 }
 .airline_seat_icon {
-    background: url(../images/airline_seat1.png) no-repeat 6% 50%;
+    background: url(../images/seat-icon-9.jpg) no-repeat 6% 50%;
     background-size: 35px 35px;
     display: inline-block;
     height: 47px;
@@ -106,9 +115,15 @@ span.angle_down {
 }
 
 #container h2 {
-    margin-left: 450px;
-    font-size: xx-large;
-    margin-top: 30px;
+    margin-left: 0px;
+   /* font-size: xx-large;*/
+    margin-top: 150px;
+    font-size: 28px;
+    background: blanchedalmond;
+    padding-left: 485px;
+}
+p#header_page {
+    margin-top: 40px;
 }
 
 #container ul {
@@ -126,15 +141,40 @@ div#hide-round {
     margin-top: -103px;
 }
 .user_icon {
-    background: url(../images/user_icon.png) no-repeat 0% 0%;
-    background-size: 52px 35px;
+    /* background: url(../images/user_icon.png) no-repeat 0% 0%; */
+    /* background-size: 52px 35px; */
     display: inline-block;
     position: relative;
-    font-size: 49px;
-    height: 38px;
+    font-size: 27px;
+    height: 45px;
     width: 60px;
+    padding-left: 13px;
+    color: #999;
 }
 img#footer_webicon {
     height: 197px;
     background: crimson;
 }
+div#containerabs h2 {
+    text-decoration: auto;
+    margin-top: 150px;
+    background-color: antiquewhite;
+    margin-left: 0px;
+    padding-left: 450px;
+    font-size: 30px;
+    color: initial;
+}
+#thank_you {
+    background: url(../images/thank_bg.png) no-repeat 0% 0%;
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 45px;
+    filter: drop-shadow(1px 0px 2px black);
+}
+    #thank_you h2 {
+        padding-left: 170px;
+        padding-top: 125px;
+    }

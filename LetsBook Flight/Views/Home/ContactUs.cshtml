@@ -32,25 +32,42 @@ text-decoration:underline;
 div#mail {
     margin-left: 150px;
     margin-top: 50px;
-    font-size: unset;
-    font-weight: 200;
+        font-size: 20px;
 }
 div#contact_no {
     margin-left: 150px;
     margin-top: 25px;
+        font-size: 20px;
 }
 div#whatsapp_no {
     margin-left: 150px;
     margin-top: 25px;
+        font-size: 20px;
 }
+
+    #mail a {
+        color: #337ab7;
+        text-decoration: none;
+        color: black;
+    }
+
+div#mail,#contact_no,#whatsapp_no    a {
+        color: #337ab7;
+        text-decoration: none;
+        color: black;
+    }
+
 b, strong {
     font-weight: 700px;
     margin-left: 30px;
 }
 
-#fcf-form {
-    display:block;
-}
+
+    #fcf-form {
+        display: block;
+        width: 430px;
+        margin-left: 90px;
+    }
 
 .fcf-body {
     margin: 0;
@@ -60,12 +77,12 @@ b, strong {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-   /* background-color: #fff; */
+    background-color: #ffe; 
     padding: 30px;
     padding-bottom: 10px;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    max-width: 100%;
+    max-width: 80%;
     margin-top:20px;
 }
 
@@ -209,40 +226,43 @@ label.fcf-label {
 input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
     width: 100%;
 }
-#fcf-form {
-    display: block;
-    width: 600px;
-    margin-left: 300px;
-}
+
+    div#office_id {
+        margin-left: 150px;
+        margin-top: 45px;
+        margin-bottom: -30px;
+        font-size: 20px;
+    }
 </style>
-<div id="container">
+<div id="containerabs">
 <div id="title_id">
 <h2> Contact Us</h2>
 </div>
+<div id="office_id">
+   <p><i class="fa fa-building-o" aria-hidden="true"></i>
+    <b>C1093 First Floor<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;Jj Colony Tigri Devli<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;New Delhi 110062<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;India
+            </b>
+    </p>
+</div>
 <div id="mail">
 
-<a href="mailto:durgeshcs397@gmail.com">
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-</svg>
-
-
-<b>   durgeshcs397@gmail.com</b>
+        <a href="mailto:avneesh.mishra@mail.com">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <b>   avneesh.mishra@mail.com</b>
 
 </a>
 </div>
 
 <div id="contact_no">
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-</svg>
-<b>    9889305550</b>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <b>    1-863-862-4492</b>
 </div>
 <div id="whatsapp_no"> 
 <a href="https://api.whatsapp.com/send?phone=9889305550">
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-</svg>
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
 
 <b>   9889305550</b>
 
@@ -252,26 +272,31 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 <div class="fcf-body">
 
     <div id="fcf-form">
-    <h3 class="fcf-h3">Contact Form</h3>
+    <h3 class="fcf-h3">Get in touch with us</h3>
 
     <form id="fcf-form-id" class="fcf-form-class" asp-controller="Home" asp-action="ContactUs" method="post" >
         
         <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your name</label>
+            <label for="Name" class="fcf-label">Name</label>
             <div class="fcf-input-group">
                 <input type="text" id="Name" name="Name" class="fcf-form-control" required>
             </div>
         </div>
 
         <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
+            <label for="Email" class="fcf-label">Email</label>
             <div class="fcf-input-group">
                 <input type="email" id="Email" name="Email" class="fcf-form-control" required>
             </div>
         </div>
-
         <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
+                    <label for="Email" class="fcf-label">Phone Number</label>
+                    <div class="fcf-input-group">
+                        <input type="number" id="number" name="tel" class="fcf-form-control" required>
+                    </div>
+                </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Message</label>
             <div class="fcf-input-group">
                 <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
             </div>

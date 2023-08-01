@@ -932,9 +932,30 @@ function ValidateSearchForm(ISCuba) {
         return false;
 }
 jQuery(document).ready(function () {
+    debugger;
+    var show_temp = 10;
+    alert(show_temp);
     jQuery('#show-passenger').on('click', function (event) {
         jQuery('#content').toggle('show');
     });
+});
+
+$(document).ready(function () {
+    debugger;
+    var show_temp = 10;
+    alert(show_temp);
+    $('#show-passenger').on('click', function (event) {
+        $('#content').toggle('show');
+    });
+});
+
+$(document).on('#show-passenger', 'click', function (event) {
+    debugger;
+    var show_temp = 10;
+    alert(show_temp);
+    
+   $('#content').toggle('show');
+   
 });
 
 ////////////////////////////////Updating Values From Model//////////////////////////////////////////////////////////////////////////////////////
@@ -3442,7 +3463,7 @@ function MobileCarCalendar() {
 
 
 function SendNewsLetterEmail(ISUp, ISMobile) {
-    // debugger;
+     debugger;
     if (ISMobile != true) {
         var emailID = ISUp ? $("#txtsubemail").val() : $("#txtsubemail_Down").val();
 
@@ -3460,7 +3481,7 @@ function SendNewsLetterEmail(ISUp, ISMobile) {
 
         //ISUp ? $('#subscribeBtn').text('Registering...') : $('#subscribeBtnDown').text('Registering...');
 
-        jQuery.getJSON("/Flight/NewsLetterSubscription", { emailId: emailID, source_: 'HomeSubscribe-Email' }, function (data) {
+        jQuery.getJSON("/CallUs/NewsLetterSubscription", { emailId: emailID, source_: 'HomeSubscribe-Email' }, function (data) {
             //$("#txtsubemail").attr("readonly", "readonly");
             ISUp ? $("#txtsubemail").val('') : $("#txtsubemail_Down").val('');
 
@@ -3487,7 +3508,7 @@ function SendNewsLetterEmail(ISUp, ISMobile) {
         jQuery.getJSON("/Flight/NewsLetterSubscription", { emailId: emailID, source_: 'HomeSubscribe-Email' }, function (data) {
             //$("#txtsubemail").attr("readonly", "readonly");
             $("#txtsubemail_Down-mid").val('');
-
+            alert("successfully");
             if (data.Success == true) {
                 //$('#subscribeBtn').text('Subscribe');
                 //$('#subcribe-msg').html(data.msg);

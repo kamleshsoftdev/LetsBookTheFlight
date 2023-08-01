@@ -1,12 +1,13 @@
 ﻿@*<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>*@
 @*<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">*@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<script src="~/js/custom.js"></script>
+@*<script src="~/js/custom.js"></script>*@
 
 <script src="~/js/flight.js"></script>
+<script src="~/js/flight/Custom.js"></script>
 @*
 <link href="~/css/cdnjs/all.min.css" rel="stylesheet" />*@
-<link href="~/css/mfsfontsicons.css" rel="stylesheet" />
+@*<link href="~/css/mfsfontsicons.css" rel="stylesheet" />*@
 <main role="main" class="mfs_main-wrapper">
 
     <div class="wraper mfcontainer__mainWrap">
@@ -88,7 +89,7 @@
                                                     </div>
                                                     <div class="col-sm-2 col-xs-2 padl5i5 padl-tab">
                                                         @*<span class="mfsIcon-flight flight-type-icon widget-iconColor"></span>*@
-                                                        <span class="lbtfIcon-flight"></span>
+                                                        <span class="lbtfIcon-flight"><i class="fas fa-plane"></i><i class="fas fa-plane fa-rotate-180"></i></span>
                                                         </div>
                                                     <div class="col-sm-5 col-xs-5 location-box">
                                                         <div class="custom_input ">
@@ -109,7 +110,7 @@
                                                             <div class="location_wrapper mobil-wrapper calneder_icon_open search-set-icon mdddeprtWapr">
                                                                 @*<span class="mfsIcon-calendar calender-mobile widget-iconColor"></span>*@
                                                                
-                                                                <input value="Mon,Jan,01,001" class="main_location form-control font30 display-none hasDatepicker" data-val="true" data-val-date="The field Departure must be a date." data-val-required="+ Please provide Departure Date" id="txtDepartual" name="Departure" onfocus="this.blur()" placeholder="SELECT" readonly="readonly" type="text">
+                                                                <input value="Mon,Jan,01,001" class="main_location form-control font30 display-none hasDatepicker" data-val="true" data-val-date="The field Departure must be a date." data-val-required="+ Please provide Departure Date" id="txtDepartual" name="Departure" onfocus="this.blur()" onclick="showCalendar('depart')" placeholder="SELECT"  type="text">
 
                                                                 <div id="depart-cal" class="cale-sel hidden-xs">
                                                                     <p class="marb-5">
@@ -127,7 +128,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <p id="lbf-calender">@*<i class="fas fa-calendar"></i>*@</p>
+                                                    <p id="lbf-calender"><i class="fa fa-calendar" aria-hidden="true"></i></p>
                                                     <div class="col-xs-2 padl-tab"><span class="br-right visible-xs"></span></div>
                                                     <div class="col-sm-5 col-xs-5 location-box" id="hide-round">
                                                         <div class="custom_input ">
@@ -135,7 +136,7 @@
                                                             <div class="location_wrapper mobil-wrapper ">
                                                                 <span class="mfsIcon-calendar calender-mobile widget-iconColor visible-xs"></span>
 
-                                                                <input value="Mon,Jan,01,001" class="main_location form-control font30 display-none hasDatepicker" data-val="true" data-val-date="The field Arrival must be a date." data-val-required="+ Please provide Arrival Date" id="txtArrival" name="Arrival" onfocus="this.blur()" placeholder="SELECT" readonly="readonly" type="text">
+                                                                <input value="Mon,Jan,01,001" class="main_location form-control font30 display-none hasDatepicker" data-val="true" data-val-date="The field Arrival must be a date." data-val-required="+ Please provide Arrival Date" id="txtArrival" name="Arrival" onfocus="this.blur()" onclick="showCalendar('arrival')" placeholder="SELECT" readonly="readonly" type="text">
 
 
                                                                 <div id="arrive-cal" class="cale-sel hidden-xs">
@@ -153,10 +154,10 @@
                                                 <div class="row mart15">
                                                     <div class="col-sm-5 col-xs-5 location-box">
                                                         <div class="custom_input ">
-
+                                                            <span class='user_icon'><i class="fa fa-user" aria-hidden="true"></i></span>
                                                             <div class="location_wrapper" id="show-passenger">
                                                                @* <span class="search-set-icon passenger-counts-icon mfsIcon-passengers widget-iconColor"></span>*@
-                                                                <span class='user_icon'></span>
+                                                               
                                                                 <input class=" form-control other-fields " id="hideshow" value="" readonly="readonly" placeholder="">
                                                                 <span id="span_flightpassanger" class="passengers-text ">Passenger</span>
 
@@ -169,10 +170,7 @@
                                                         <div class="custom_input ">
 
                                                             <div class="location_wrapper position-rel">
-                                                                @*<span class="search-set-icon book-class-icon mfsIcon-class widget-iconColor"></span>*@
-                                                             
-                                                               @* <i class="fa-solid fa-person-seat"></i>*@
-                                                                <span class="airline_seat_icon"></span>
+                                                                <span class="airline_seat_icon"><i class="fas fa-seat-airline"></i></span>
                                                                 <select class="form-control  other-fields" id="FlightClass" name="FlightClass">
                                                                     <option value="2">Economy</option>
                                                                     <option value="4">Business</option>
@@ -181,7 +179,7 @@
                                                                 <span class="angle_down">
                                                                 <i class="fa fa-angle-down" style="font-size:24px"></i>
                                                                 </span>
-                                                                @*<span class="mfsIcon-angle-down widget-iconColor"></span>*@
+                                                               
                                                             </div>
                                                         </div>
                                                     </div>

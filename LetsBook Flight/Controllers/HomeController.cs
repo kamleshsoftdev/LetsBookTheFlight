@@ -38,7 +38,7 @@ namespace LetsBook_Flight.Controllers
          return View();
         }
         [HttpPost]
-        public ActionResult ContactUs(FormCollection fc) 
+        public ActionResult ContactUs(IFormCollection fc) 
         {
 
             return RedirectToAction("ThankYou");
