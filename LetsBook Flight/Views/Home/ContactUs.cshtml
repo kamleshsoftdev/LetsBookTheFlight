@@ -15,235 +15,16 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7XawooWB1YejMHrz04faz2Mb9yGqojMc"></script>
 
-<style>
-div#container {
-    height: -webkit-fill-available;
-    width: -webkit-fill-available;
-    /* border: 1px solid black; */
-    /* margin-left: 500px; */
-	background-color: antiquewhite;
-    margin-top:150px;
-}
-h2{
-margin-left:500px;
-text-decoration:underline;
-}
-div#mail {
-    margin-left: 150px;
-    margin-top: 50px;
-        font-size: 20px;
-}
-div#contact_no {
-    margin-left: 150px;
-    margin-top: 25px;
-        font-size: 20px;
-}
-div#whatsapp_no {
-    margin-left: 150px;
-    margin-top: 25px;
-        font-size: 20px;
-}
-
-    #mail a {
-        color: #337ab7;
-        text-decoration: none;
-        color: black;
-    }
-
-div#mail,#contact_no,#whatsapp_no    a {
-        color: #337ab7;
-        text-decoration: none;
-        color: black;
-    }
-
-b, strong {
-    font-weight: 700px;
-    margin-left: 30px;
-}
-
-
-    #fcf-form {
-        display: block;
-        width: 430px;
-        margin-left: 90px;
-    }
-
-.fcf-body {
-    margin: 0;
-    font-family: -apple-system, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #ffe; 
-    padding: 30px;
-    padding-bottom: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    max-width: 80%;
-    margin-top:20px;
-}
-
-.fcf-form-group {
-    margin-bottom: 1rem;
-}
-
-.fcf-input-group {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    width: 100%;
-}
-
-.fcf-form-control {
-    display: block;
-    width: 100%;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    outline: none;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.fcf-form-control:focus {
-    border: 1px solid #313131;
-}
-
-select.fcf-form-control[size], select.fcf-form-control[multiple] {
-    height: auto;
-}
-
-textarea.fcf-form-control {
-    font-family: -apple-system, Arial, sans-serif;
-    height: auto;
-}
-
-label.fcf-label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-}
-
-.fcf-credit {
-    padding-top: 10px;
-    font-size: 0.9rem;
-    color: #545b62;
-}
-
-.fcf-credit a {
-    color: #545b62;
-    text-decoration: underline;
-}
-
-.fcf-credit a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-.fcf-btn {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-@@media (prefers-reduced-motion: reduce) {
-    .fcf-btn {
-        transition: none;
-    }
-}
-
-.fcf-btn:hover {
-    color: #212529;
-    text-decoration: none;
-}
-
-.fcf-btn:focus, .fcf-btn.focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.fcf-btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.fcf-btn-primary:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-}
-
-.fcf-btn-primary:focus, .fcf-btn-primary.focus {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
-}
-
-.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: 0.3rem;
-}
-
-.fcf-btn-block {
-    display: block;
-    width: 100%;
-}
-
-.fcf-btn-block+.fcf-btn-block {
-    margin-top: 0.5rem;
-}
-
-input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
-    width: 100%;
-}
-
-    div#office_id {
-        margin-left: 150px;
-        margin-top: 45px;
-        margin-bottom: -30px;
-        font-size: 20px;
-    }
-</style>
 <div id="containerabs">
 <div id="title_id">
 <h2> Contact Us</h2>
 </div>
 <div id="office_id">
    <p><i class="fa fa-building-o" aria-hidden="true"></i>
-    <b>C1093 First Floor<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;Jj Colony Tigri Devli<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;New Delhi 110062<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;India
+            <b>
+                C1093 First Floor, Jj Colony Tigri Devli New Delhi 110062, India
             </b>
     </p>
 </div>
@@ -268,7 +49,24 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 </a>
 </div>
+    <div id="myDiv" style="width:100%;height:400px;">
 
+    </div>
+    <div id="map_cantct">
+        <p>
+            <i class="fa fa-building-o" aria-hidden="true"></i>
+            <b>
+                C1093 First Floor, Jj Colony Tigri Devli New Delhi 110062, India
+            </b><br />
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <b>    1-863-862-4492</b><br />
+            
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+
+                <b>   9889305550</b>
+
+        </p>
+    </div>
 <div class="fcf-body">
 
     <div id="fcf-form">
@@ -316,4 +114,26 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 </div>
 
+<script type="text/javascript">
+    var myAddress = new google.maps.LatLng(28.492610, 77.244930);
+    $(document).ready(function () {
+    //Create Options or set different Characteristics of Google Map
+    var mapOptions = {
+        center: myAddress,
+        zoom: 15,
+        minZoom: 15,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
 
+    //Display the Google map in the div control with the defined Options
+    var map = new google.maps.Map(document.getElementById("myDiv"), mapOptions);
+
+    //Set Marker on the Map
+    var marker = new google.maps.Marker({
+        position: myAddress,
+        animation: google.maps.Animation.BOUNCE,
+    });
+
+    marker.setMap(map);
+    });
+</script>

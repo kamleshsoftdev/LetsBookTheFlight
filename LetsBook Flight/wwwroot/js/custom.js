@@ -174,7 +174,7 @@ function AutoCompleteForFlight() {
                     return false;
                 }
             });
-            //debugger;
+            
             var searchText = document.getElementById('Origin').value.replace(/[^\w\s]/gi, '');
             $('#btnSearchsubmit').attr('disabled', 'disabled');
             $('#btnSearchsubmit').text('Processing...');
@@ -932,7 +932,7 @@ function ValidateSearchForm(ISCuba) {
         return false;
 }
 jQuery(document).ready(function () {
-    debugger;
+  
     var show_temp = 10;
     alert(show_temp);
     jQuery('#show-passenger').on('click', function (event) {
@@ -941,7 +941,7 @@ jQuery(document).ready(function () {
 });
 
 $(document).ready(function () {
-    debugger;
+  
     var show_temp = 10;
     alert(show_temp);
     $('#show-passenger').on('click', function (event) {
@@ -950,7 +950,7 @@ $(document).ready(function () {
 });
 
 $(document).on('#show-passenger', 'click', function (event) {
-    debugger;
+   
     var show_temp = 10;
     alert(show_temp);
     
@@ -996,7 +996,7 @@ function UpadtingONDValue() {
         if ($("#RoundMultiOnewayTrip").val().length > 0 && $("#RoundMultiOnewayTrip").val() != 1) {
 
             if ($('#txtArrival').val() != "" && $('#txtArrival').val() != "1/1/0001 12:00:00 AM") {
-                //debugger;
+              
 
                 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
                     var date4 = $('#txtArrival').val();
@@ -1235,7 +1235,7 @@ function HasRoundtrip() {
 }
 
 function tripTypeUpdate(type) {
-    debugger;
+  
     if (type == "oneWay") {
         $(".Switch-flight").addClass('On').removeClass('Off');
         $("#hide-round").addClass("hide-trip");
@@ -1969,7 +1969,7 @@ $(document).on('click', '.qtyplushoteladult', function (e) {
 });
 
 function OnbackGet() {
-    //debugger;
+    
     try {
 
         var dept = $('#txtCheckIn').val().split(',');
@@ -3059,7 +3059,7 @@ function ReloadMobileCalender() {
 
 
         onSelect: function (dateText, inst) {
-            // debugger;
+            
             var date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#Departuretemp").val());
             var date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#Arrivaltemp").val());
             //var selectedDate = $(this).datepicker("getDate");
@@ -3463,7 +3463,7 @@ function MobileCarCalendar() {
 
 
 function SendNewsLetterEmail(ISUp, ISMobile) {
-     debugger;
+     
     if (ISMobile != true) {
         var emailID = ISUp ? $("#txtsubemail").val() : $("#txtsubemail_Down").val();
 

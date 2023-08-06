@@ -62,8 +62,7 @@ if (newWindowWidth < 600) {
 
 //////////////////////////////////////////////////////////////////#region Flight/////////////////////////////////////////////////////////////////////////
 
-$(document).ready(function () {
-    debugger; 
+$(document).ready(function () { 
     if (newWindowWidth > 767) {
         $('#Origin').focus();
     }
@@ -164,11 +163,27 @@ $(document).ready(function () {
     );
     $("txtArrival").datepicker("show");
 });
-
-
+$(document).ready(function () {
+ 
+    $(function () {
+        $('#txtDepartual').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            format: "dd/mm/yyyy",
+            language: "tr"
+        });
+        $('#txtArrival').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            format: "dd/mm/yyyy",
+            language: "tr"
+        });
+    });
+    
+});
 let depSelect = false
 function showCalendar(datetype) {
-    //debugger;
+    
     if (datetype == 'depart') {
         $("#date_picker_range .return").removeClass("active");
         $("#date_picker_range .depart").addClass("active");
@@ -340,7 +355,7 @@ function ReloadMobileCalender() {
 
 
         onSelect: function (dateText, inst) {
-            // debugger;
+            
             var date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#Departuretemp").val());
             var date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, $("#Arrivaltemp").val());
             //var selectedDate = $(this).datepicker("getDate");
@@ -509,7 +524,7 @@ function AutoCompleteForFlight() {
                     return false;
                 }
             });
-            //debugger;
+            
             var searchText = document.getElementById('Origin').value.replace(/[^\w\s]/gi, '');
             $('#btnSearchsubmit').attr('disabled', 'disabled');
             $('#btnSearchsubmit').text('Processing...');
@@ -1120,7 +1135,7 @@ function HasRoundtrip() {
 }
 
 function tripTypeUpdate(type) {
-    debugger;
+  
     if (type == "oneWay") {
         $(".Switch-flight").addClass('On').removeClass('Off');
         $("#hide-round").addClass("hide-trip");
@@ -1340,13 +1355,13 @@ $(function () {
 // This button will decrement the value till 0 
 
 $('.close-panel-flight-new').click(function (e) {
-    debugger;
+    
     alert("close popup");
     $('.passenger-count').hide();
 });
 
 $('.close-panel-flight').click(function (e) {
-    debugger;
+  
     alert("close popup");
     $('#hideshow').val(1);
     $('#AdultCount').val(1);

@@ -17,7 +17,7 @@ namespace LetsBook_Flight.Controllers
         {
             return View();
         }
-
+        [Route("privacy")]
         public IActionResult Privacy()
         {
             return View();
@@ -28,15 +28,18 @@ namespace LetsBook_Flight.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        [Route("aboutus")]
         public ActionResult Aboutus()
         { 
         
         return View();
         }
+        [Route("contact")]
         public ActionResult ContactUs() { 
         
          return View();
         }
+        
         [HttpPost]
         public ActionResult ContactUs(IFormCollection fc) 
         {
