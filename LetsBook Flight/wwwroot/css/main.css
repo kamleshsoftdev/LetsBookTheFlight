@@ -14,8 +14,10 @@ img {
 }
 
 div#logo_home img {
-    height: 120px;
+    height: 112px;
     width: auto;
+    overflow: hidden;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 div#logo_home {
